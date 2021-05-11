@@ -1,0 +1,427 @@
+<style>
+@import url(http://fonts.googleapis.com/css?family=Alex+Brush|Open+Sans:400,300,600|Roboto+Slab:400,100,300,700);
+
+@font-face {font-family: 'Museo-700';src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/museo_700.eot');src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/museo_700.eot?#iefix') format('embedded-opentype'),url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/museo_700.woff') format('woff'),url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/museo_700.ttf') format('truetype');}
+
+@font-face {font-family: 'Museo-500';src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/museo_500.eot');src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/museo_500.eot?#iefix') format('embedded-opentype'),url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/museo_500.woff') format('woff'),url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/museo_500.ttf') format('truetype');}
+  
+@font-face {font-family: 'Museo-300';src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/museo_300.eot');src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/museo_300.eot?#iefix') format('embedded-opentype'),url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/museo_300.woff') format('woff'),url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/museo_300.ttf') format('truetype');}
+
+
+p {
+font-family: Open Sans;
+font-weight: 100;
+letter-spacing: .5px;
+}
+
+.wrappercore {
+width: 920px;
+margin: 0 auto;
+text-align: center;
+background: url(http://acrowiretechnology.test/wp-content/uploads/2015/02/map-2.jpg) top left no-repeat;
+background-position: 0 -74px;
+}
+
+#topnavigation {
+	display: none;
+	}
+
+.header {
+  margin: 0 auto 0 150px;
+  text-align: center;
+  font-family: 'Museo-300';
+  width: 100%;
+}
+
+.header__year {
+  font-size: 120px;
+  font-family: 'Museo-300';
+  border-right: 1px dotted #999;
+  color: #ccc !important;
+  width: 320px;
+  float: left;
+  margin-top: 0;
+	height: 100px;
+	line-height: 120px;
+}
+
+.header__event {
+  float: left;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 72px;
+  color: #39b45a !important;
+  line-height: 38px;
+  margin-top: 20px;
+font-family: Museo-300;
+}
+
+.intro {
+  clear: both;
+  text-align: left;
+  width: 100%;
+	margin: 0 auto;
+}
+
+.intro__article {
+width: 450px;
+margin-left: 120px;
+padding-top: 84px;
+background: rgba(255,255,255,0.6);
+}
+
+.intro__header {
+  font-size: 36px;
+  font-family: Museo-300;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.intro__description {
+  margin-top: -20px;
+  width: 350px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.logos {
+  margin: 50px 0 70px 350px;
+clear: both;
+overflow: hidden;
+height: 200px;
+}
+
+.logo__1 {
+  float:left;
+  margin-right: 30px;
+}
+
+.logo__2 {
+  float: right;
+}
+
+.logo__3 {
+  float:left;
+  margin-right: 30px;
+}
+
+.logo__4 {
+  float: right;
+}
+
+/**.mapbg {
+  overflow: hidden;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/ilta-map.jpg) top left no-repeat;
+
+}**/
+
+h1, h2, h3, h4, h5, h6 {
+  color: #555;
+}
+
+p {
+  font-family: Open Sans;
+  line-height: 30px;
+}
+
+.breakdown {
+  position: relative;
+  border-bottom: 12px solid #39b45a;
+  padding-bottom: 50px;
+	font-size: 16px;
+	background: #fff;
+	clear: both;
+
+}
+
+.breakdown__header {
+  font-family: Museo-300;
+  margin-top:10px;
+}
+
+.breakdown__ul {
+	margin: 0 auto 0 175px;
+	width: 75%;
+}
+
+.breakdown__ul li {
+  text-align: left;
+  line-height: 40px;
+	font-weight: 100;
+	font-family: Open Sans;
+}
+
+.city_cell {
+  margin: 100px auto 20px auto;
+  text-align: center;
+	overflow: hidden;
+}
+
+.city__header {
+  margin: 0 0 60px 0;
+  font-size: 30px;
+  font-family: Museo-300;
+line-height: 28px;
+}
+
+.date_table {
+  font-family: Open Sans;
+  border: 0;
+  border-collapse: collapse;
+}
+
+.date_table th {
+  font-family: Museo-500;
+  font-size: 24px !important;
+  color: #39b45a;
+  border: 0;
+line-height: 30px;
+}
+
+.date_table th, .date_table td {
+	padding: 25px 15px;
+	border: 0;
+	width: 10%;
+	text-align: center;
+	font-size: .85rem;
+	vertical-align: middle;
+font-weight: 100;
+}
+
+tbody tr:nth-child(odd) {
+  background: #f4f4f4;
+}
+
+input[type=text], textarea, input[type=tel], input[type=email] {
+	transition: all 0.30s ease-in-out;
+	outline: none;
+	padding: 3px 0px 3px 5px;
+	margin: 5px 2px 4px 5px;
+	border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(106,189,71,1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(106,189,71,1);
+}
+
+input[type=tel]:focus, input[type=email]:focus {
+  box-shadow: 0 0 5px rgba(106,189,71,1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(106,189,71,1);
+}
+
+::-webkit-input-placeholder {
+	color: #ccc;
+	margin-left: 5px;
+	font-family: Open Sans;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: #ccc;
+	margin-left: 5px;
+	font-family: Open Sans; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: #ccc;
+	margin-left: 5px;
+	font-family: Open Sans; 
+}
+
+:-ms-input-placeholder {  
+	color: #ccc;
+	margin-left: 5px;
+	font-family: Open Sans; 
+}
+
+/** addons **/
+
+.highlightgry {
+  background: #f4f4f4;
+}
+
+.heavy {
+  font-weight: 700;
+  color: #555;
+}
+
+.dgray {
+  color: #444;
+}
+
+.font30 {
+  font-size: 30px;
+}
+
+.supercenter {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.grnbar {
+  margin: 40px 0;
+  background: #39b45a;
+  width: 100%;
+  padding: 60px 0;
+}
+
+.superheadline {
+  font-size: 60px;
+  
+}
+
+.wht {
+  color: #fff !important;
+}
+
+.grn {
+  color: #39b45a;
+}
+
+.gry {
+  color: #999;
+}
+
+::-webkit-input-placeholder {
+   color: #ccc;
+	font-family: Open Sans;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #ccc;
+	font-family: Open Sans;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #ccc;
+	font-family: Open Sans;  
+}
+
+:-ms-input-placeholder {  
+   color: #ccc;
+	font-family: Open Sans; 
+}
+
+
+/** old style from legal **/
+
+#container {
+	width: 920px !important;
+	background: #fff;
+} 
+
+#main {
+	
+	background: #fff;
+}
+
+#header {
+background-image: none !important;
+height: 100%;
+}
+
+#main-curve-bottom {
+	display: none;
+}
+
+#content ul li, #maintext ul li {
+	background-position: 0px 12px;
+	line-height: 33px;
+	font-family: 'Open Sans' sans-serif;
+}
+
+#sp_pitch {
+background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/sp-for-legal.jpg) center no-repeat fixed;
+min-height: 700px;
+margin: 100px 0 -40px 0;
+overflow: hidden;
+width: 100%;
+/* margin-left: -20px; */
+}
+
+article.sp_callout {
+height: 150px;
+padding: 60px 0 0 0;
+margin: 0 auto;
+text-align: center;
+color: #222 !important;
+font-family: 'Museo-700';
+background: rgba(255,255,255,.85);
+}
+
+article.sp_callout p {
+font-weight: 700;
+color: #999;
+}
+
+.signup_form {
+  text-align: left;
+  clear: both;
+  width: 100%;  
+}
+
+.signup__cell {
+	margin: 50px auto 25px auto;
+	text-align: left;
+	width: 500px;
+	border: 1px solid #ccc;
+	background: #f4f4f4;
+	padding: 25px;
+	border-radius: 3px;
+}
+
+.legalsubmit {
+	width: 200px;
+	height: 40px !important;
+	border-radius: 3px !important;
+	background: #39b54a;
+	color: #fff !important;
+	font-family: 'Open Sans' sans-serif;
+	font-size: 20px !important;
+	text-transform: uppercase;
+	margin: 0 auto;
+	text-align: center;
+	border: 0;
+	cursor: pointer;
+	transition: .5s background;
+}
+
+.legalsubmit:hover {
+	background: #2EA23D;
+}
+
+.wpcf7-form-control {
+	height: 25px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-color: #ccc;
+	font-size: 12px;
+	color: #999;
+	font-family: 'Open Sans';
+	font-weight: 100;
+	text-indent: 5px;
+}
+
+.wpcf7-form-control.wpcf7-textarea {
+width: 100%;
+height: 130px;
+font-size: 14px;
+color: #555;
+}
+
+input {
+	border: 1px solid #ccc;
+}
+
+span.wpcf7-not-valid-tip {
+color: #f00 !important;
+font-size: 1em !important;
+display: inline !important;
+margin-left: -200px !important;
+}
+</style>
