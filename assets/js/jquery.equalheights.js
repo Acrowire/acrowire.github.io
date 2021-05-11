@@ -1,0 +1,2 @@
+
+(function(a){a.fn.equalHeights=function(c,b){tallest=c?c:0;this.each(function(){if(a.browser.msie&&a.browser.version.substr(0,1)<7){if(this.offsetHeight>tallest)tallest=this.offsetHeight}else if(a(this).height()>tallest)tallest=a(this).height()});if(b&&tallest>b)tallest=b;return this.each(function(){a.browser.msie&&a.browser.version.substr(0,1)<7?a(this).height(tallest):a(this).css({"*height":tallest,"min-height":tallest});$childElements=a(this).children(".autoPadDiv");$childElements.css({"*height":tallest, "min-height":tallest})})}})(jQuery);

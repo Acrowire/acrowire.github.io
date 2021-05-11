@@ -1,0 +1,1280 @@
+@charset "utf-8";
+/*----------------------------------------------------
+                Acrowire CSS by Calvin Bryant.com
+------------------------------------------------------*/
+
+body{
+	font-family:Arial,Verdana,Tahoma;
+	font-size:12px;
+	color:#a7a7a7;
+	line-height:18px;
+	padding:0px;
+	margin:0px;
+	background-color:#dcdcdc;
+}
+
+/* Acrowire links */
+a, a:visited{
+	color:#6BB00B; 
+	text-decoration:none;
+}
+a:hover{
+	color:#6c6; 
+	text-decoration:underline;
+}
+a img{
+	border:none
+}
+.imgcenter{
+	margin:4px auto 20px auto;
+	display:block
+}
+.imgmiddle{
+	vertical-align:middle;
+	margin-right:8px;
+}
+
+.imgleft{
+	float:left; 
+	margin:4px 10px 10px 0px;
+}
+.imgright{
+	float:right; 
+	margin:4px 0px 20px 18px;
+}
+hr {
+	background-color:#e4e4e4;
+	border-width:0;
+	color:#d6d6d6;
+	height:1px;
+	line-height:0;
+	margin:30px 0px !important;
+	page-break-after:always;
+	clear:both;
+}
+hr.double {
+	background-color:#d6d6d6;
+	border-width:0;
+	color:#d6d6d6;
+	height:2px;
+	line-height:0;
+	margin:30px 0px;
+	page-break-after:always;
+}
+hr.double-form {
+	background-color:#d6d6d6;
+	border-width:0;
+	color:#d6d6d6;
+	height:2px;
+	line-height:0;
+	margin:10px 0px !important;
+	page-break-after:always;
+}
+strong{
+	color:#693;
+}
+
+/* Acrowire Lists, Blockquotes and Paragraphs */
+p, ul, ol, blockquote{
+	margin-bottom:20px;
+}
+ul li{
+	padding:0px 0px 0px 0px;
+	line-height:20px;	
+}
+code{
+	border-left:2px solid #cccccc;
+  	background:#fefefe;
+  	padding:5px 10px;
+	font-size:11px;
+  	display:block;
+  	color:#858585;
+  	margin-bottom:10px;
+}
+
+/* Acrowire Pullquotes */
+.pullquote_right,.pullquote_left{
+	color:#9c9c9c;
+	float:right;
+	font-size:1.2em;
+	letter-spacing:0px;
+	margin-bottom:0;
+	margin-top:7px;
+	margin-left:20px;
+	padding-left:15px;
+	width:40%;
+	font-weight:bold;
+    font-style:italic; 
+    line-height:1.4em;
+    border-left:2px solid #cccccc;
+}
+.pullquote_left{
+    border-right:2px solid #cccccc;
+    border-left:none;
+	float:left;
+	margin-left:0px;
+	margin-right:10px;
+	padding-left:0;
+	padding-right:15px ;
+}
+
+/* Acrowire Dropcap */
+.dropcap{
+	float:left;
+	font-size:30px;
+	height:41px;
+	line-height:30px;
+	margin-bottom:-10px;
+	margin-right:0px;
+	padding-top:3px;
+	text-align:center;
+	width:41px;
+}
+
+/* Acrowire Custom Message Styling */
+.info {
+	margin: 15px 0;
+	color: #478BBF;
+	padding: 8px 10px 8px 37px;
+	background: #DCEFF5 url(../images/info.png) 12px 9px no-repeat;
+	border: 1px solid #B8E7F5;
+} 
+.success {
+	margin: 15px 0;
+    color:#3F9153;  
+    padding:8px 10px 8px 37px;
+    background:#D7F7DF url(../images/success.png) 12px 9px no-repeat;
+    border:1px solid #A3F7B8
+}
+.error {
+    margin: 15px 0;
+    color: #C24848;  
+    padding: 8px 10px 8px 37px;
+    background: #FFD6D6 url(../images/error.png) 12px 9px no-repeat;
+    border: 1px solid #FFC2C2;
+} 
+.warning {
+    margin: 15px 0;
+    color: #CF9E00;  
+    padding: 8px 10px 8px 37px;
+    background: #FAF2D7 url(../images/warning.png) 12px 9px no-repeat;
+    border: 1px solid #FAE8AF;
+} 
+
+#content ul li, #maintext ul li{
+	background-image:url(../images/list-general.gif);
+	background-position:0px center;
+	background-repeat:no-repeat;
+	padding:0px 0px 0px 12px;
+	line-height:24px;
+	list-style-type:none;
+}
+ul.arrow li{
+	background-image:url(../images/list-general.gif);
+	background-position:0px center;
+	background-repeat:no-repeat;
+	padding:0px 0px 0px 12px;
+	line-height:24px;
+	list-style-type:none;
+}
+ul.circle li{
+	background-image:url(../images/list-red.png) !important;
+	background-position:0px center;
+	background-repeat:no-repeat;
+	padding:0px 0px 0px 20px !important;
+	line-height:20px !important;
+	list-style-type:none;
+}
+
+ul.nolistblock li{
+	padding:0px 0px 0px 0px !important;
+	line-height:20px;
+	display:inline-block;
+	margin:0px 12px 0px 0px;
+	background-image:none !important;
+}
+li.marginoff{margin-right:0px !important;}
+ol li{
+	list-style:decimal;
+	line-height:20px;
+	list-style-position:inside
+}
+blockquote{
+	background-image:url(../images/quote.png);
+	background-repeat:no-repeat;
+	background-position:0px 5px;
+}
+.clear{clear:both;}
+.center{text-align:center; margin-bottom:10px;}
+
+/* Acrowire heading */
+h1, h2, h3, h4, h5, h6{
+	color:#7f7f7f !important;
+	margin-bottom:12px;
+}
+h1{font-size:24px;line-height:26px;}
+h2{
+	font-size:22px;
+	line-height:24px;
+}
+h3{font-size:18px;line-height:20px;}
+h4{font-size:16px;line-height:18px;}
+h5{font-size:14px;line-height:16px;}
+h6{font-size:13px;line-height:15px;}
+
+/* Acrowire text styled */
+.boldtext-medium{font-size:12px; font-weight:bold; color:#c6c6c6;}
+.boldtext-strong{font-size:20px; font-weight:bold; color:#c6c6c6;}
+.price{font-size:36px; color:#7f7f7f; font-weight:bold;}
+.boxtitle-hosting{font-size:14px; color:#7f7f7f; font-weight:bold; padding:0px 0px 15px 0px; display:block; line-height:10px;}
+.redtext{
+	color:#093;
+}
+small{font-size:11px;}
+
+/* Acrowire Container
+------------------------------------------------------*/
+#container{
+	width:960px;
+	margin:0 auto;
+}
+
+/* Acrowire Topnavigation
+------------------------------------------------------*/
+#topnavigation{
+	background-image:url(../images/top-glow.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+	text-align:right;
+	font-size:11px;
+	height:39px;
+	width:960px;
+}
+#topnavigation a, #topnavigation a:visited{
+	color:#a6a5a5;
+	padding:0px 10px;
+}
+.toplink{line-height:40px; text-shadow:0px 1px 0px #f1f1f1;}
+
+/* Acrowire Main
+------------------------------------------------------*/
+#main-curve-top{
+	width:960px;
+	background-image:url(../images/bg-main-curve-top.gif);
+	background-repeat:no-repeat;
+	height:7px;
+	background-position:bottom;
+}
+#main-curve-bottom{
+	width:960px;
+	background-image:url(../images/bg-main-curve-bottom.gif);
+	background-repeat:no-repeat;
+	height:7px;
+}
+#main{
+	width:920px;
+	padding:0px 20px 20px 20px;
+	background-color:#f4f4f4;
+}
+#top{height:66px; position:relative;}
+
+#topright{
+	background-image:url(../images/vertical-line.png);
+	background-repeat:repeat-y;
+	padding:0px 0px 0px 20px;
+	line-height:normal;
+	position:absolute;
+	right:10px;
+	top:27px;
+	width: 191px;
+}
+
+/* Acrowire Main Menu
+------------------------------------------------------*/
+#mainmenu{
+	background-image:url(../images/bg-mainmenu.gif);
+	background-repeat:no-repeat;
+	width:920px;
+	height:39px;
+	padding:0 0 0 38px;	
+	font-size:11px;
+	position:relative; z-index:9;
+}
+#mainmenu ul{line-height:38px; z-index:99;position:relative; float:left;}
+#mainmenu ul li{
+	float:left;
+	padding:10px 0px 9px 25px;
+	color:#868585;
+	background-image:none;
+	position:relative;
+}
+#mainmenu ul li a, #mainmenu ul li a:visited{
+	color:#868585;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #eaeaea;
+	width:115px;
+}
+#mainmenu ul li li a{
+	display:block;
+	float:left;
+	font-size:11px;
+}
+#mainmenu ul li a:hover{
+	text-decoration:none;
+	color:#333;
+}
+#mainmenu ul li.home img{padding-top:2px; vertical-align:top}
+.menu li li{
+	margin:0 0 0px 0px;
+	padding:0px;
+	position:relative;
+	z-index:100;	
+}
+#menu li li{
+	margin:0 0 0px 0px !important;
+	padding:0px !important;
+	position:relative;
+	z-index:100;
+	line-height:20px !important	
+}
+#menu ul{
+	display:none;
+	position:absolute;
+	top:34px;
+	left:11px;
+	width:135px;
+	padding:0px 0px 8px 0px !important;
+	background-color:#cccccc;
+	-moz-border-radius-bottomleft:4px;
+	-moz-border-radius-bottomright:4px;
+	-webkit-border-bottom-left-radius:4px;
+	-webkit-border-bottom-right-radius:4px;
+	border-bottom-right-radius:4px;	
+	border-bottom-left-radius:4px;	
+	font-size:11px;
+	z-index:100;
+}
+#menu ul ul{top:0px; left:135px;}
+#menu li ul a, #menu li ul a:visited{
+	width:105px;
+	padding:0px 15px 0px 15px;
+	font-size:12px;
+	color:#868585 !important;
+	line-height:24px;
+	z-index:100;
+	text-decoration:none;
+}
+
+/* Acrowire Header
+------------------------------------------------------*/
+#header{ 
+	background-image:url(../images/bg-header.jpg);
+	background-repeat:no-repeat;
+	height:339px;
+	margin-top:10px;
+	position:relative;
+	z-index:1;
+}
+#header-inner{
+	height:85px;
+	position:relative;
+	text-align:right;
+}
+#header-inner h1{
+	padding-right:165px;
+	padding-top:25px;
+}
+#header-inner .imgtitle{
+	right:65px;
+	position:absolute;
+	top:-22px;
+	z-index:999;
+}
+
+/* Acrowire Slider
+------------------------------------------------------*/
+.header-left{
+	float:left;
+	width:496px;
+}
+.header-text{
+	padding:50px 40px 20px 50px;
+}
+.header-text h1{
+	width:420px;
+	font-size:26px;
+	line-height:28px;
+}
+.conbut{
+	text-align:right;
+}
+.stitle{
+	font-size:18px;
+}
+.header-right{
+	float:left;
+	width:424px;
+	text-align:center;
+	position:relative;
+}
+.header-image1{
+	position:absolute;
+	top:-48px;
+	right:0px;
+	width: 920px;
+	height: 395px;
+}
+.header-image1 img{
+	width: 920px;
+	height: 391px;
+}
+.header-image2{
+	position:absolute;
+	right:-10px;
+	top:0px;
+	width: 433px;
+	height: 334px;
+}
+.header-image3{
+	position:absolute;
+	right:-10px;
+	top:0px;
+	width: 433px;
+	height: 334px;
+}
+.header-image4{
+	position:absolute;
+	right:-10px;
+	top:0px;
+	width: 433px;
+	height: 334px;
+}
+#nav-slide{
+	position:absolute;
+	bottom:20px;
+	right:20px;
+	z-index:10;
+	padding:10px 10px;
+	-moz-border-radius:3px;
+	-webkit-border-top:3px;
+	border-radius:3px;
+	background-image:url(../images/nav-slide-repeat.png);
+	background-repeat:repeat;
+}
+#pager a{
+	background: url(../images/slidenav.png) no-repeat;
+	display:block;
+	float:left;
+	font-size:0px;
+	width:9px;
+	height:10px;
+	margin:0px 2px;
+	outline-style:none;
+	outline-width:medium;
+	text-indent:-9999px;
+}
+#pager .activeSlide{
+	background: url(../images/slidenav-active.png) no-repeat;
+}
+
+/* AcrowireContent
+------------------------------------------------------*/
+#content{
+	margin-top:25px;
+}
+#content-col{
+	margin-bottom:25px;
+}
+#content-inner{
+	border-top:solid 2px #d6d6d6;
+}
+#content-inner-sidebar{
+	background-image:url(../images/bg-sidebar.gif);
+	background-repeat:repeat-y;
+	border-top:solid 2px #d6d6d6;
+}
+/*#content-inner-sidebar-bottom{
+	width:920px;
+	height:7px;
+	margin-bottom:10px;
+	background-image:url(../images/bg-sidebar-bottom.gif);
+	background-repeat:no-repeat;
+}*/
+
+#content-inner-sidebar-bottom {
+    
+    background-repeat: no-repeat;
+    height: 7px;
+    margin-bottom: -7px;
+    width: 920px;
+}
+
+#maintext{
+	padding:0px 20px 20px 0px;
+}
+.arw-about{float:left;}
+
+/* Acrowire Popup Form */
+.popup-form{
+	margin-left:50px;
+}
+.submit-popup{
+	font-weight:bold;
+	margin:15px 0px 0px 87px;
+}
+.textarea-popup{
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:2px solid #d6d6d6;
+	font-family:Tahoma, Arial, verdana;
+	font-size:12px;
+	overflow:hidden;
+	padding:10px 5px; 
+	margin:0px 0px 9px 0px; 
+	color:#939393;
+	width:260px;
+}
+
+/* Acrowire FAQ accordion styling
+------------------------------------------------------*/
+.ask{	
+	cursor:pointer;
+	font-size:12px;
+	border-bottom:1px solid #e4e4e4;
+	padding:1px 0px 9px 0px;
+	clear:both;
+}
+.question{
+	background-color:#ffffff;
+	margin:-5px 0px 10px 0px;
+	padding:11px 13px 1px 13px;
+}
+.openquestion{
+	color:#7f7f7f !important;
+	margin-bottom:5px;
+}
+.closedquestion{
+	color:#7f7f7f !important; 
+	margin-bottom:5px;
+}
+
+/* Acrowire Columns
+------------------------------------------------------*/
+.col-920{width:920px;}
+.col-900{width:900px; margin:0 auto;}
+.col-160 {
+	display:inline-block;
+	width:138px;
+	vertical-align:top;
+	padding:0px 0px 0px 0px !important
+}
+.col-173 {
+	display:inline-block;
+	width:173px;
+	vertical-align:top;
+	padding:0px 0px 0px 0px !important;
+}
+.col-180 {
+	display:inline-block;
+	width:180px;
+	vertical-align:top;
+	padding:20px 0px 40px 0px !important
+}
+.col-196 {
+	float:left;
+	width:135px;
+	vertical-align:top;
+	padding:0px 0px 0px 0px !important
+}
+
+/* used for 4 column */
+.col-207 { 
+	display:inline-block;
+	width:207px !important;
+	vertical-align:top;
+	padding:0px 0px 0px 0px !important;
+	margin-right:27px;
+}
+.col-207-last { 
+	display:inline-block;
+	width:207px !important;
+	vertical-align:top;
+	padding:0px 0px 0px 0px !important;
+	margin-right:0px;
+}
+
+/* used for 3 column */
+.col-286 { 
+	display:inline-block;
+	width:286px !important;
+	vertical-align:top;
+	padding:0px 0px 0px 0px !important;
+	margin-right:27px;
+}
+.col-286-last { 
+	display:inline-block;
+	width:286px !important;
+	vertical-align:top;
+	padding:0px 0px 0px 0px !important;
+	margin-right:0px;
+}
+
+/* used for 2 column */
+.col-445 { 
+	display:inline-block;
+	width:445px !important;
+	vertical-align:top;
+	padding:0px 0px 0px 0px !important;
+	margin-right:27px;
+}
+.col-445-last { 
+	display:inline-block;
+	width:445px !important;
+	vertical-align:top;
+	padding:0px 0px 0px 0px !important;
+	margin-right:0px;
+}
+.col-604 { 
+	display:inline-block;
+	width:604px !important;
+	vertical-align:top;
+	padding:0px 0px 0px 0px !important;
+	margin-right:27px;
+}
+.col-604-last { 
+	display:inline-block;
+	width:604px !important;
+	vertical-align:top;
+	padding:0px 0px 0px 0px !important;
+	margin-right:0px;
+}
+
+/* column for faq */
+.col-275 { 
+	display:inline-block;
+	width:275px !important;
+	vertical-align:top;
+	padding:0px 0px 0px 0px !important;
+	margin-right:20px;
+}
+.col-275-last { 
+	display:inline-block;
+	width:275px !important;
+	vertical-align:top;
+	padding:0px 0px 0px 0px !important;
+	margin-right:0px;
+}
+
+.col-280 {
+	display:inline-block;
+	width:275px !important;
+	vertical-align:top;
+	padding:0px 0px 0px 0px !important;
+}
+.col-284 {
+	display:inline-block;
+	width:284px !important;
+	vertical-align:top;
+	padding:0px 0px 10px 0px !important;
+}
+.col-320 {
+	float:left;
+	width:320px;
+	vertical-align:top;
+	padding:0px 0px 0px 0px !important;
+	margin:0px;
+}
+.col-440 {
+	display:inline-block;
+	width:440px;
+	vertical-align:top;
+	padding:0px 0px 0px 0px !important;
+	margin:0px;
+}
+.col-440 p, .col-440 ul {margin:0px;}
+.vertical-separator {
+	display:inline-block;
+	width:33px;
+	background-image:url(../images/vertical-line.png);
+	background-repeat:repeat-y;
+	background-position:top center;
+}
+.vertical-separator-noline {
+	display:inline-block;
+	width:24px;
+	height:100% !important;
+}
+.vertical-separator-noline2 {
+	display:inline-block;
+	width:22px;
+}
+.col-620{float:left; width:620px;}
+.col-300{float:left; width:300px;}
+.fullwidth{
+	padding:30px 0px;
+}
+.fullwidth-serv{
+	padding:30px 0px 0px 0px;
+}
+
+/* Acrowire Sideright
+------------------------------------------------------*/
+.sideright{
+	padding:22px 22px 22px 22px;
+}
+.sideright h2{
+	font-size:18px;
+	margin-bottom:8px;
+}
+.sideright ul{
+	margin-bottom:0px;
+}
+.sideright li{
+	margin-bottom:22px;
+	color:#757575;
+}
+.sideright li li{
+	margin-bottom:0px;
+}
+.sideright ul li li{
+	background-image:url(../images/line.gif);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	padding:8px 0px ;
+	text-shadow:0px 1px 0px #eaeaea;
+}
+.sideright ul li li a, .sideright ul li li a:visited{
+	color:#757575;
+	background-image:url(../images/list.gif);
+	background-repeat:no-repeat;
+	background-position:0px 4px;
+	padding:0px 0px 0px 12px;
+}
+.sideright p, .sideright blockquote{
+	text-shadow:0px 1px 0px #eaeaea;
+	margin-bottom:10px;
+	
+}
+.testimonial{
+	position:relative;
+}
+.nav-testimonial{
+	background-image:url(../images/grey.gif);
+	background-repeat:repeat-x;
+	background-color:#c2c2c2;
+	-moz-border-radius: 4px; /* Firefox */
+	-webkit-border-radius: 4px; /* Safari, Chrome */
+	-khtml-border-radius: 4px; /*Linux browsers*/
+	border-radius: 4px; /*CSS3*/
+	border:solid 1px #b8b8b8;
+	padding:5px 2px 0px 5px;
+	width:15%;
+	float:right;
+	top:-32px;
+	position:relative;
+}
+
+body:nth-of-type(1) .nav-testimonial{
+	background-image:url(../images/grey.gif);
+	background-repeat:repeat-x;
+	background-color:#c2c2c2;
+	-moz-border-radius: 4px; /* Firefox */
+	-webkit-border-radius: 4px; /* Safari, Chrome */
+	-khtml-border-radius: 4px; /*Linux browsers*/
+	border-radius: 4px; /*CSS3*/
+	border:solid 1px #b8b8b8;
+	padding:2px 2px 3px 5px;
+	width:15%;
+	float:right;
+	top:-32px;
+	position:relative;
+}
+@media all and (min-width:0px) {
+.nav-testimonial{width:15%;height:21px;top:0px;left:0px;position:absolute;}
+.next{position:absolute;top:10px;left:22px;}
+.prev{position:absolute;top:10px;}
+}
+
+.next{
+	background-image:url(../images/arrow-top.gif);
+	background-repeat:no-repeat;
+	width:10px;
+	height:6px;
+}
+.prev{
+	background-image:url(../images/arrow-bottom.gif);
+	background-repeat:no-repeat;
+	width:10px;
+	height:6px;
+}
+.next, .prev{
+	text-indent:-9999px !important;
+	font-size:0px;
+	display:inline-block;
+	margin:0px 4px;
+	cursor:pointer;
+}
+
+/* Acrowire Homepage
+------------------------------------------------------*/
+.box-grey{
+	background-color:#d6d6d6;
+	-moz-border-radius: 4px; /* Firefox */
+	-webkit-border-radius: 4px; /* Safari, Chrome */
+	-khtml-border-radius: 4px; /*Linux browsers*/
+	border-radius: 4px; /*CSS3*/
+	position:relative;
+	margin-top:35px;
+}
+.box-grey-text{
+	width:140px;
+	color:#a0a0a0;
+	margin-left:120px;
+	padding:10px 0px 18px 0px;
+}
+.box-grey-text h3{
+	margin-bottom:5px;
+}
+.img-tour{position:absolute; left:10px; top:-15px;}
+
+.button{
+	background-color:#093;
+	-moz-border-radius: 4px; /* Firefox */
+	-webkit-border-radius: 4px; /* Safari, Chrome */
+	-khtml-border-radius: 4px; /*Linux browsers*/
+	border-radius: 4px; /*CSS3*/
+	background-image:url(../images/bg-button.gif);
+	background-repeat:repeat-x;
+	color:#fff !important;
+	margin-right:10px;
+	padding:8px 20px 10px 20px;
+	font-size:16px;
+}
+.button2{
+	background-color:#bcbcbc;
+	-moz-border-radius: 4px; /* Firefox */
+	-webkit-border-radius: 4px; /* Safari, Chrome */
+	-khtml-border-radius: 4px; /*Linux browsers*/
+	border-radius: 4px; /*CSS3*/
+	background-image:url(../images/bg-button2.gif);
+	background-repeat:repeat-x;
+	color:#fff !important;
+	margin-right:10px;
+	padding:8px 20px 10px 20px;
+	font-size:16px;
+	display: inline-block;
+}
+.button-alt{
+	background-color:#023161;
+	-moz-border-radius: 4px; /* Firefox */
+	-webkit-border-radius: 4px; /* Safari, Chrome */
+	-khtml-border-radius: 4px; /*Linux browsers*/
+	border-radius: 4px; /*CSS3*/
+	background-image:url(../images/bg-button.gif);
+	background-repeat:repeat-x;
+	color:#fff !important;
+	padding:8px 20px 10px 20px;
+	font-size:16px;
+}
+.button:hover, .button-alt:hover, .button2:hover{color:#fff; text-decoration:none}
+
+
+/* Acrowire Services
+------------------------------------------------------*/
+.tb{
+	background-image:url(../images/horizontal-line.gif);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	padding-bottom:10px;
+	margin-bottom:20px
+}
+
+.tb h3{
+	margin-bottom:3px;
+}
+.italictext{
+	font-size:14px;
+	font-style:italic;
+	line-height:22px;
+	margin-bottom:30px;
+}
+.boxservices{
+	margin-bottom:20px;
+	padding-bottom:10px !important;
+}
+
+
+/* Acrowire Sales
+------------------------------------------------------*/
+#pricing-boxe{
+	border:solid 1px #cdcdcd;
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	margin:40px 0px 50px 0px !important;
+	padding:0px 22px
+}
+#pricing-boxe hr {
+	background-color:#e4e4e4;
+	border-width:0;
+	color:#d6d6d6;
+	height:1px;
+	line-height:0;
+	margin:20px 0px;
+	page-break-after:always;
+}
+#pricing-boxe .border{
+	border:solid 1px #cdcdcd;
+	border-width:0px 1px 0px 0px;
+	padding:20px 22px 56px 0px !important;
+}
+#pricing-boxe .borderactive{
+	border:solid 1px #cdcdcd;
+	border-width:1px 1px;
+	padding:34px 22px 70px 22px !important;
+	margin:-15px 0px;
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	position:relative;
+}
+#pricing-boxe .best{
+	position:absolute;
+	top:-5px;
+	right:-4px;
+}
+#dedicated-boxe{
+	border:solid 1px #cdcdcd;
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	margin:40px 0px 100px 0px !important;
+	padding:0px 0px
+}
+.row{
+	border-bottom:solid 1px #cdcdcd;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px
+}
+.row.noborder{
+	border-bottom:0px;
+}
+
+.col1{
+	width:215px;
+	float:left;
+	text-align:center;
+	padding:20px 0px;
+}
+.col2{
+	width:441px;
+	float:left;
+	padding:0px 40px 0px 40px;
+	background-image:url(../images/vertical-line.png);
+	background-repeat:repeat-y;
+	background-position:left;
+	margin:20px 0px;
+}
+.col2 p{margin-bottom:10px;}
+.bgwhite{
+	background-color:#fff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	padding:8px;
+	text-align:center
+}
+.col3{
+	width:182px;
+	float:left;
+	background-image:url(../images/bg-pricebox.gif);
+	background-repeat:no-repeat;
+	background-color:#e1e1e1;
+	_height:157px;
+	min-height:157px;
+	position:relative;
+}
+.best{
+	position:absolute;
+	top:-4px;
+	right:-4px;
+}
+
+/* Acrowire Blog
+------------------------------------------------------*/
+.post{border-bottom:solid 1px #e4e4e4; padding-bottom:20px; margin-right:10px; margin-bottom:20px;}
+.post h3{margin-bottom:2px;}
+.post h3 a, .post h3 a:visited{color:#7f7f7f; text-decoration:none}
+.metadata{font-size:11px;}
+.entry{padding:10px 0px 10px 0px;}
+.entry img{margin-bottom:8px;}
+.more{
+	background-color:#c6c6c6;
+	-moz-border-radius: 4px; /* Firefox */
+	-webkit-border-radius: 4px; /* Safari, Chrome */
+	-khtml-border-radius: 4px; /*Linux browsers*/
+	border-radius: 4px; /*CSS3*/
+	background-image:url(../images/more.gif);
+	background-repeat:repeat-x;
+	color:#908f8f !important;
+	padding:7px 20px 8px 20px;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+}
+.more:hover{text-decoration:none;}
+.butmore{text-align:right;}
+.pages{line-height:30px; margin-bottom:10px; clear:left}
+.blogpages{margin:30px 0px 0px 0px}
+.pfpages{margin:-15px 0px 12px 0px;}
+.pageof{
+	border:solid 1px #dcdcdc;
+	-moz-border-radius: 4px; /* Firefox */
+	-webkit-border-radius: 4px; /* Safari, Chrome */
+	-khtml-border-radius: 4px; /*Linux browsers*/
+	border-radius: 4px; /*CSS3*/
+	padding:4px 8px !important;
+	margin-right:3px;
+}
+.pages a{
+	border:solid 1px #dcdcdc;
+	-moz-border-radius: 4px; /* Firefox */
+	-webkit-border-radius: 4px; /* Safari, Chrome */
+	-khtml-border-radius: 4px; /*Linux browsers*/
+	border-radius: 4px; /*CSS3*/
+	padding:4px 6px;
+	margin:0px 3px;
+	color:#a7a7a7 !important;
+	text-decoration:none;
+}
+.pages a:hover{color:#fff !important; background-color:#cccccc; text-decoration:none;}
+.pages a.current{color:#fff !important; background-color:#cccccc;}
+#comment{
+	padding:30px 10px 20px 0px
+}
+
+#comment ol{
+	margin:0px;
+	padding:10px 0px 0px 0px;
+	list-style-type:none;
+}
+#comment ol li ol{
+	margin-left:80px;
+	}
+.commentlist, .commentlist ol{position:relative;}
+.commentlist li{margin:0px; list-style-type:none;}
+.commentlist li small{font-size:11px; font-style:italic}
+.avatar{position:absolute; top:10px; left:0}
+.comment-text{ margin-left:80px; width:auto; border-bottom:solid 1px #e2e1e1;  padding:0px 0px 5px 0px; margin-bottom:10px}
+.commdate{float:left; text-align:left}
+.reply{}
+.smalltext{text-align:right; clear:none}
+#comment-form h4{
+	margin-bottom:0px;	
+}
+#comment-form form{
+	position:relative;
+	padding:20px 10px 50px 10px;
+}
+#comment-form .input{
+	width:255px;
+}
+#comment-form .form-column-right{
+	position:absolute;
+	top:20px;
+	right:20px;
+}
+#comment-form .textarea{
+	width:255px;
+}
+#comment-form button{
+	position:absolute;
+	right:0;
+	bottom:-50px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius: 4px;
+}
+
+/* Acrowire imagesfolio
+------------------------------------------------------*/
+.boxpf{
+	background-image:url(../images/horizontal-line.gif);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	margin-bottom:40px;
+	padding-bottom:10px !important;
+}
+.boxpf img{
+	margin-bottom:10px;
+}
+
+/* Acrowire Contact
+------------------------------------------------------*/
+.contact-area{padding:20px 10px 20px 10px; margin:-15px 0px 40px 0px}
+form{
+	margin:0; 
+	padding:0;
+}
+fieldset{border:0px;}
+#contactFormArea{
+	margin:0px 0px 0px 0px;
+	position:relative;  
+}
+label{
+	margin-bottom:5px;
+	display:block
+}
+.textfield{
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	behavior:url(border-radius.htc);
+	border:2px solid #d6d6d6;
+	font-family:Tahoma, Arial, verdana;
+	font-size:12px; 
+	padding:7px 5px; 
+	margin:0px 0px 10px 0px; 
+	display:block;
+	color:#939393;
+	width:260px;
+}
+.input{
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	behavior:url(border-radius.htc);
+	border:2px solid #d6d6d6;
+	font-family:Tahoma, Arial, verdana;
+	font-size:12px; 
+	padding:7px 5px; 
+	margin:0px 0px 10px 0px; 
+	display:block;
+	color:#939393;
+	width:260px;
+}
+.textarea{
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:2px solid #d6d6d6;
+	font-family:Tahoma, Arial, verdana;
+	font-size:12px;
+	overflow:hidden;
+	padding:10px 5px; 
+	margin:0px; 
+	color:#939393;
+	width:260px;
+}
+#contactFormArea button{
+	top:194px;
+	right:0px;
+	position:absolute
+}
+button{
+	font-size:12px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	background-image:url(../images/more-submit.gif);
+	background-repeat:repeat-x;
+	border:solid 1px #e2e2e2;
+	border-width:0px 1px 1px 0px;
+	color:#908f8f;
+	padding:5px;
+	cursor:pointer;
+	min-width:100px;
+	display:block;
+	margin:10px 0px;
+	padding:4px 0px 7px 0px;
+	text-shadow:0px 1px 0px #eaeaea;
+}
+.buttoncontact{
+  	font-weight:bold;
+}
+.contact-column-right{
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+.loading{
+    background:url(../images/loading-contact.gif) top left no-repeat;
+    padding-left:25px;
+	color:#797979;
+    margin-top:0px;
+    float:left;
+}
+.success-contact {
+	text-align:center;
+    color:#3F9153;
+	margin-bottom:5px;
+    padding:8px 10px 8px 37px;
+    background:#D7F7DF url(../images/success.png) no-repeat;
+	background-position:127px 10px;
+    border:1px solid #A3F7B8
+} 
+
+/* Acrowire footer
+------------------------------------------------------*/
+#footer{
+	background-image:url(../images/footer-glow.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+	margin:0px;
+	padding:20px 0px;
+}
+#footer-col{
+	width:920px;
+	padding:0px 20px;
+}
+
+#footer-col ul li a, #footer-col ul li a:visited{
+	color:#999999 !important;
+	text-shadow:0px 1px 0px #f4f4f4;
+
+}
+#footer-text{
+	color:#999999;
+	text-align:center;
+	padding:20px 0px 0px 0px;
+	text-shadow:0px 1px 0px #f4f4f4;
+}
+#hosting-col{overflow:hidden;}
+
+
+#buttonsend
+{
+	font-size:11px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	background-image:url(../images/more-submit.gif);
+	background-repeat:repeat-x;
+	border:solid 1px #e2e2e2;
+	border-width:0px 1px 1px 0px;
+	color:#908f8f;
+	padding:5px;
+	cursor:pointer;
+	min-width:100px;
+	display:block;
+	margin:10px 0px;
+	padding:4px 0px 7px 0px;
+	text-shadow:0px 1px 0px #eaeaea;
+	
+	top:194px;
+	right:0px;
+	position:absolute
+}
+
+cufon cufontext{ position:relative !important; z-index:99999 !important; display:block;}
+.fade { margin:0 6px 0 0 ;}
+.socialicon a { color:#999 !important;}
+.socialicon a:hover { color:#999 !important;}
