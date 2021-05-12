@@ -2,9 +2,9 @@
 * DD_belatedPNG: Adds IE6 support: PNG images for CSS background-image and HTML <IMG/>.
 * Author: Drew Diller
 * Email: drew.diller@gmail.com
-* URL: http://www.dillerdesign.com/experiment/DD_belatedPNG/
+* URL: //www.dillerdesign.com/experiment/DD_belatedPNG/
 * Version: 0.0.7a
-* Licensed under the MIT License: http://dillerdesign.com/experiment/DD_belatedPNG/#license
+* Licensed under the MIT License: //dillerdesign.com/experiment/DD_belatedPNG/#license
 *
 * Example usage:
 * DD_belatedPNG.fix('.png_bg'); // argument is a CSS selector
@@ -37,14 +37,14 @@ var DD_belatedPNG = {
 			Just in case lots of other developers have added
 			lots of other stylesheets using document.createStyleSheet
 			and hit the 31-limit mark, let's not use that method!
-			further reading: http://msdn.microsoft.com/en-us/library/ms531194(VS.85).aspx
+			further reading: //msdn.microsoft.com/en-us/library/ms531194(VS.85).aspx
 		*/
 		var style = document.createElement('style');
 		document.documentElement.firstChild.insertBefore(style, document.documentElement.firstChild.firstChild);
 		var styleSheet = style.styleSheet;
 		styleSheet.addRule(this.ns + '\\:*', '{behavior:url(#default#VML)}');
 		styleSheet.addRule(this.ns + '\\:shape', 'position:absolute;');
-		styleSheet.addRule('img.' + this.ns + '_sizeFinder', 'behavior:none; border:none; position:absolute; z-index:-1; top:-10000px; visibility:hidden;'); /* large negative top value for avoiding vertical scrollbars for large images, suggested by James O'Brien, http://www.thanatopsic.org/hendrik/ */
+		styleSheet.addRule('img.' + this.ns + '_sizeFinder', 'behavior:none; border:none; position:absolute; z-index:-1; top:-10000px; visibility:hidden;'); /* large negative top value for avoiding vertical scrollbars for large images, suggested by James O'Brien, //www.thanatopsic.org/hendrik/ */
 		this.styleSheet = styleSheet;
 	},
 	

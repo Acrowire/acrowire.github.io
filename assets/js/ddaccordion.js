@@ -1,4 +1,4 @@
-//** Accordion Content script: By Dynamic Drive, at http://www.dynamicdrive.com
+//** Accordion Content script: By Dynamic Drive, at //www.dynamicdrive.com
 //** Created: Jan 7th, 08'. Last updated: June 7th, 2010 to v1.9
 
 //Version 1.9: June 7th, 2010':
