@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
 
 	// get the action filter option item on page load
 	var $filterType = $('#filterOptions li.active a').attr('class');
@@ -67,84 +67,25 @@ $(function () {
 	});
 });
 
+
 $(function () {
-	var Page = (function () {
-
-		var $navArrows = $('#nav-arrows'),
-			$nav = $('#nav-dots > span'),
-			slitslider = $('#slider').slitslider({
-				onBeforeChange: function (slide, pos) {
-
-					$nav.removeClass('nav-dot-current');
-					$nav.eq(pos).addClass('nav-dot-current');
-
-				}
-			}),
-
-			init = function () {
-
-				initEvents();
-
-			},
-			initEvents = function () {
-
-				// add navigation events
-				$navArrows.children(':last').on('click', function () {
-
-					slitslider.next();
-					return false;
-
-				});
-
-				$navArrows.children(':first').on('click', function () {
-
-					slitslider.previous();
-					return false;
-
-				});
-
-				$nav.each(function (i) {
-
-					$(this).on('click', function (event) {
-
-						var $dot = $(this);
-
-						if (!slitslider.isActive()) {
-
-							$nav.removeClass('nav-dot-current');
-							$dot.addClass('nav-dot-current');
-
-						}
-
-						slitslider.jump(i + 1);
-						return false;
-
-					});
-
-				});
-
-			};
-
-		return {
-			init: init
-		};
-
-	})();
-
-	Page.init();
-});
-$(function () {
-	$('#con-cycle').cycle({
-		timeout: 5000,
-		fx: 'none',
-		pager: '#pager',
-		pause: true,
-		cleartypeNoBg: false,
-		pauseOnPagerHover: 0
+	$('.cycle-testimonial').cycle({
+		timeout: 9000, // (0 to disable auto advance)
+		fx: 'scrollVert', // choose your transition type, ex: fade, scrollUp, shuffle, etc...   
+		pause: true, // true to enable "pause on hover"
+		prev: '.next', // selector for element to use as click trigger for previous slide 
+		next: '.prev', // selector for element to use as click trigger for previous slide 
+		cleartypeNoBg: true, // set to true to disable extra cleartype fixing (leave false to force background color setting on slides)
+		pauseOnPagerHover: 0 // true to pause when hovering over pager link
 	});
 });
 
-$(function () {
+$(document).ready(function () {
+	$("#footer-col .equal").equalHeights();
+});
+
+$('.button, button, .box-grey, .bgwhite, .nav-testimonial, #nav-slide').corner("4px");
+$(document).ready(function () {
 	$(".signup").colorbox({
 		width: "465px",
 		inline: true,
@@ -156,41 +97,27 @@ $(function () {
 		href: "#login-content"
 	});
 });
-
 $(function () {
-	$("#content-col .equal").equalHeights();
-	$("#hosting-col .equal").equalHeights();
-	$("#footer-col .equal").equalHeights();
-});
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-19453986-1']);
-_gaq.push(['_trackPageview']);
-
-$(function () {
-	var ga = document.createElement('script');
-	ga.type = 'text/javascript';
-	ga.async = true;
-	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
-		'.google-analytics.com/ga.js';
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(ga, s);
-});
-
-var $ = jQuery.noConflict();
-$(function () {
-	/* for top navigation */
-	$(" #menu ul").css({
-		display: "none"
-	}); // Opera Fix
-	$(" #menu li").hover(function () {
-		$(this).find('ul:first').css({
-			visibility: "visible",
-			display: "none"
-		}).slideDown(200);
-	}, function () {
-		$(this).find('ul:first').css({
-			visibility: "hidden"
-		});
+	$("#accordion").accordion({
+		heightStyle: "content",
+		collapsible: true,
+		active: false
 	});
+});
 
+$(function () {
+	var icons = {
+		header: "ui-icon-plus",
+		activeHeader: "ui-icon-circle-arrow-s"
+	};
+	$("#accordion").accordion({
+		icons: icons
+	});
+	$("#toggle").button().click(function () {
+		if ($("#accordion").accordion("option", "icons")) {
+			$("#accordion").accordion("option", "icons", null);
+		} else {
+			$("#accordion").accordion("option", "icons", icons);
+		}
+	});
 });

@@ -1,0 +1,186 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+div#header {
+    display: none !important;
+}
+
+#hero1 {
+    background: url(../images/envisioning-space.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#hero2 {
+    background: url(../images/psa.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#hero3 {
+    background: url(../images/webinar.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#hero--appdev {
+    background: url(../images/psa.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#hero--intranet {
+    background: url(../images/psa.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#hero--intelligence {
+    background: url(../images/psa.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#hero--process {
+    background: url(../images/psa.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+section#hero3 {
+    height: 500px;
+}
+
+.hero,
+.content {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    /* min-height: 159px; */
+    display: block;
+    clear: both;
+    top: -22px;
+}
+
+.hero h1,
+.hero p {
+    color: #fff !important;
+}
+
+.inner {
+    width: 100%;
+    /* overflow: hidden; */
+    /* min-height: 300px; */
+    margin-top: -20px;
+}
+
+.hero .inner {
+    background: rgba(0, 0, 0, 0.4) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;
+}
+
+.copy {
+    position: relative;
+    width: 100%;
+    padding: 24px 0;
+    height: auto;
+}
+
+@media screen and (max-width:600px) {
+    #hero1 h1 {
+        font-size: 44px !important;
+        margin-bottom: 15px !important;
+        line-height: 0 !important;
+    }
+
+    #hero1 h3 {
+        font-size: 14px !important;
+        letter-spacing: 1px !important;
+        line-height: 25px !important;
+        max-width: 300px !important;
+        border-top: 0 !important;
+    }
+}
+
+#hero1 h1 {
+    letter-spacing: 30px;
+    margin-bottom: 30px !important;
+    transition: .2s all;
+}
+
+#hero1 h3 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 300;
+    border-top: 2px solid #fff;
+    width: 33%;
+    margin: 0 auto;
+    padding-top: 20px;
+    line-height: 36px;
+    transition: .2s all;
+    min-width: 450px;
+    max-width: 500px;
+}
+
+#hero1 h1,
+#hero2 h1 {
+    letter-spacing: 10px;
+    font-size: 40px;
+    margin: 30px auto;
+    text-transform: uppercase;
+    line-height: 52px;
+}
+
+.content1,
+.content2 {
+    margin: 0 auto;
+    width: 70%;
+    display: block;
+    clear: both;
+    text-align: left;
+}
+
+.content h1,
+.content p {
+    color: #333;
+}
+
+h1 {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 32px;
+    padding: 0px 20px;
+}
+
+p {
+    font-size: 14px;
+}
+
+#content {
+    margin-top: -5px !important;
+    padding: 0 !important;
+}
+
+.col-920 {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto 0 33%;
+}
+
+#footer-col {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}

@@ -1,4 +1,4 @@
-<style>
+
 @import url(http://fonts.googleapis.com/css?family=Alex+Brush|Open+Sans:400,300,600|Roboto+Slab:400,100,300,700);
 
 @font-face {font-family: 'Museo-700';src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/museo_700.eot');src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/museo_700.eot?#iefix') format('embedded-opentype'),url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/museo_700.woff') format('woff'),url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104288/museo_700.ttf') format('truetype');}
@@ -18,7 +18,7 @@ letter-spacing: .5px;
 width: 920px;
 margin: 0 auto;
 text-align: center;
-background: url(http://acrowiretechnology.test/wp-content/uploads/2015/02/map-2.jpg) top left no-repeat;
+background: url(../images/map-2.jpg) top left no-repeat;
 background-position: 0 -74px;
 }
 
@@ -424,4 +424,3 @@ font-size: 1em !important;
 display: inline !important;
 margin-left: -200px !important;
 }
-</style>

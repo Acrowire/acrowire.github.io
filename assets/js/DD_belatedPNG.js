@@ -1,4 +1,20 @@
+/**
+* DD_belatedPNG: Adds IE6 support: PNG images for CSS background-image and HTML <IMG/>.
+* Author: Drew Diller
+* Email: drew.diller@gmail.com
+* URL: http://www.dillerdesign.com/experiment/DD_belatedPNG/
+* Version: 0.0.7a
+* Licensed under the MIT License: http://dillerdesign.com/experiment/DD_belatedPNG/#license
+*
+* Example usage:
+* DD_belatedPNG.fix('.png_bg'); // argument is a CSS selector
+* DD_belatedPNG.fixPng( someNode ); // argument is an HTMLDomElement
+**/
 
+/*
+PLEASE READ:
+Absolutely everything in this script is SILLY.  I know this.  IE's rendering of certain pixels doesn't make sense, so neither does this code!
+*/
 
 var DD_belatedPNG = {
 
