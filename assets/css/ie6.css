@@ -1,0 +1,102 @@
+/*----------------------------------------------------
+          Acrowire - CSS - Exclusively for IE6
+------------------------------------------------------*/
+#mainmenu ul li{
+	float:left;
+	padding:9px 0px 10px 25px;
+}
+#mainmenu ul li.home img{padding-top:2px; vertical-align:top}
+*+html #mainmenu ul li.home img{padding-top:0px; vertical-align:top}
+#menu ul{border:solid 1px #ccc;}
+.col-160 {
+	display:inline;
+	float:left;
+}
+.nav-testimonial{
+	padding:5px 5px 0px 5px;
+	height:23px;
+}
+
+.vertical-separator {
+	display:inline;
+	float:left;
+}
+.col-173 {
+	display:inline;
+	float:left;
+}
+.col-280 {
+	display:inline;
+	float:left;
+}
+.col-440 {
+	display:inline;
+	float:left;
+}
+ul.nolistblock li{
+	display:inline;
+	float:left;
+}
+.col-180 {
+	display:inline;
+	float:left;
+}
+.col-284 {
+	display:inline;
+	float:left;
+}
+
+.vertical-separator-noline2 {
+	display:inline;
+	float:left;
+	width:28px;
+}
+#pricing-boxe{float:left}
+.vertical-separator-noline {
+	display:inline;
+	float:left;
+	width:30px;
+}
+.textarea{
+	height:145px;
+}
+*html .contact-column-right{
+	position:absolute;
+	top:0px;
+	right:25px;
+}
+*+html .contact-column-right{
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+
+.next, .prev{
+	display:inline;
+	float:left;
+	top:10px;
+	margin:5px 5px 0px 5px;
+}
+.quote{width:240px;}
+*html .socialicon li{padding:3px 0px}
+*+html .socialicon li{padding:0px 0px}
+
+#comment-form .form-column-right{right:30px;}
+#comment-form .textarea{height:145px;}
+.post .imgleft, .post .imgright, .post .imgcenter{margin-top:-30px;}
+.meta-post-right{height:26px}
+.avatar{position:absolute; top:20px; left:0}
+#comment-form button{border:0px; height:28px; }
+#comment ol{
+	margin:0px;
+	padding:10px 0px 0px 0px;
+	list-style-type:none !important;
+}
+#comment-form button{border:0px; }
+.comment-text{background-color:#f4f4f4}
+.commdate{float:none; text-align:left; float:left}
+
+
+
+
+

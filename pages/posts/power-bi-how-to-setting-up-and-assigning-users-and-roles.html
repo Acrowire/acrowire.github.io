@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8" />
+	<link  rel="stylesheet" href="../../assets/css/blog-style.css" />
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<title>Power BI How To: Setting Up and Assigning Users and Roles | Acrowire</title>
+	
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Acrowire, Calvin Bryant" />
+	<meta name="description" content="Technology Consulting For Business" />
+	<meta name="keywords"
+		content="Acrowire Charlotte North Carolina, Cloud Services, Custom Application Development, Business Process Improvement, Website Strategy and Development, Microsoft Silverlight, Cloud Hosted Email, Cloud CRM Online Contact Relationship Management, Back Office Automation, Cloud Computing,Charlotte, North Carolina, IT, South Carolina, Business Technology, Ted Theodoropoulos, Consultant" />
+	<link rel="shortcut icon" href="../assets/images/favicon.ico" />
+	
+	
+</head>
+
+<body>
+	<div id="container">
+		<div id="topnavigation"></div>
+		<div id="main-curve-top"></div>
+		<div id="main">
+			<div id="top">
+				<div id="logo"><a href="../../index.html"><img
+							src="../../assets/images/logo.png"
+							alt="" /></a></div>
+				<div id="topright">
+				</div>
+			</div>
+			<ul class="ff"
+				style="width:30px !important; position:relative !important; top:53px; left:25px;  z-index:99999;">
+				<li><a style="position:relative; z-index:99999;" href="../../index.html" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image20','','../assets/images/icon-homeOver.gif',1)"><img
+							src="../assets/images/icon-home.gif"
+							width="13" height="15" border="0" id="Image20" /></a></li>
+			</ul>
+			<div id="mainmenu" class="menu-header-container">
+				<div class="mainmenu_inner">
+					<ul id="menu">
+						<li><a href="../../pages/about-us.html">About Us</a>
+							<ul class="sub-menu">
+								<li><a href="../../pages/business-minds-with-technology-solutions.html">Our Approach</a>
+								</li>
+								<li><a href="../../pages/careers.html">Careers</a></li>
+							</ul>
+						</li>
+						<li><a href="../../pages/services-main.html">Services</a>
+							<ul class="sub-menu">
+								<li><a href="../../pages/envisioning-01-4.html">Envisioning</a></li>
+								<li><a href="../../pages/customer-application-development.html">Custom Application
+										Development</a></li>
+								<li><a href="../../pages/portals.html">Intranet/Extranet Development &#038; Design</a></li>
+								<li><a href="../../pages/businessintelligence.html">Business Intelligence</a></li>
+							</ul>
+						</li>
+						<li><a href="../../pages/success-stories-main.html">Success Stories</a>
+							<ul class="sub-menu">
+								<li><a href="../../pages/testimonies.html">Testimonials</a></li>
+								<li><a href="../../pages/case-studies.html">Case Studies</a></li>
+							</ul>
+						</li>
+						<li><a href="../../pages/thought-leadership-main-page.html">Thought Leadership</a>
+							<ul class="sub-menu">
+								<li><a href="../../pages/videos.html">Webinars &#038; Podcasts</a></li>
+								<li><a href="../../pages/blog.html">Blog</a></li>
+								<li><a href="../../pages/articles.html">Featured Articles</a></li>
+								<li><a href="../../pages/news-and-events.html">News</a></li>
+							</ul>
+						</li>
+						<li><a href="../../pages/get-started.html">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="header-inner">
+				<h1>Power BI How To: Setting Up and Assigning Users and Roles</h1>
+				<img src="../../assets/images/globe.png" alt="Acrowire"
+					class="imgtitle" />
+			</div>
+			<div id="content-inner-sidebar">
+				<div class="col-620">
+					<div id="maintext">
+						<br />
+						<div id="nav-above" class="navigation">
+							<div class="nav-previous"><a
+									href="../office-365-deep-dive-lync-proves-significant-value-for-legal.html"
+									rel="prev"><span class="meta-nav">&larr;</span> Office 365 Deep Dive: Lync Proves
+									Significant Value for Legal</a></div>
+							<div class="nav-next"><a
+									href="../sharepoint-2013-whats-new-for-legal-atlanta-recap.html"
+									rel="next">SharePoint 2013: What&#8217;s New for Legal? Atlanta Recap <span
+										class="meta-nav">&rarr;</span></a></div>
+						</div>
+						<div id="post-1738"
+							class="post-1738 post type-post status-publish format-standard hentry category-blog tag-application-development tag-business-intelligence tag-how-to tag-office-365 tag-power-bi tag-sharepoint">
+							<h1 class="entry-title">Power BI How To: Setting Up and Assigning Users and Roles</h1>
+							<div class="entry-meta">
+								<span class="meta-prep meta-prep-author">Posted on</span> <a href="index.html"
+									title="7:49 pm" rel="bookmark"><span class="entry-date">August 26, 2014</span></a>
+								<span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n"
+										href="../author/bgough.html" title="View all posts by Brian Gough">Brian
+										Gough</a></span> </div>
+							<div class="entry-content">
+								<p>Power BI is a collection of features and services to help you display content like
+									Excel workbooks, charts and reports through a different UI, <em>if you wish</em>,
+									but also gives you some other options such as (but not limited to), scheduled data
+									refreshes, access to on-premises data, and the ability to create, and manage
+									connections to data sources to help ensure everyone uses the same data source for
+									reporting.</p>
+								<p>In this post, I will discuss how to:</p>
+								<ul>
+									<li><strong>Assign users a Power BI license</strong></li>
+									<li><strong>Assign Power BI roles</strong></li>
+									<li><strong>Setting up Power BI</strong></li>
+								</ul>
+								<p>Before getting into the How To portion, it&#8217;s important to understand the
+									various roles. Essentially, there will be three roles to be aware of when activating
+									Power BI:</p>
+								<p>1)      Consumers<br />
+									2)      Power BI Users<br />
+									3)      Power BI Admin</p>
+								<p><span style="text-decoration: underline;">Consumers</span></p>
+								<p>This is any of your authenticated users that have access to your SharePoint site(s). 
+									They do NOT need to have a Power BI license assigned to them to be able to see,
+									render and interact with the content that is in a site they have access to even if
+									some of that content is leveraging Power BI features, like data refreshes.</p>
+								<p><span style="text-decoration: underline;">Power BI Users</span></p>
+								<p>These will be select user(s) that you assign one of the Power BI licenses you
+									purchase.  These users will be able to add the Power BI App to sites where ever
+									they/you choose and they have permissions to add Apps.  They will have the rights to
+									access the Power BI site the App generates and set up data refresh schedules,
+									queries, etc. (more on this later)</p>
+								<p><span style="text-decoration: underline;">Power BI Admin</span></p>
+								<p>These users can access the Power BI Admin pages to perform higher functions like set
+									up Gateways (access to on-premises data stores), create Data Connection files and
+									monitor Power BI logs, etc.</p>
+								<p>Once you have purchased your Power BI licenses, your Farm Admins can assign roles for
+									Power BI Admins or assign Power BI licenses to users.</p>
+								<h3>To assign user(s) a Power BI license</h3>
+								<p>In your Office 365 Admin center, go to the active users and choose one that you would
+									like to assign a license to.</p>
+								<p>Click on the <strong>Licenses</strong> link and you should see a section where you
+									can assign them a Power BI license.</p>
+								<p><a href="../../assets/images/BI_1.png"><img
+											loading="lazy" class="aligncenter size-large wp-image-1740"
+											src="../../assets/images/BI_1-1024x157.png"
+											alt="BI_1" width="640" height="98"
+											srcset="../../assets/images/BI_1-1024x157.png 1024w, ../../assets/images/BI_1-300x46.png 300w, ../../assets/images/BI_1.png 1045w"
+											sizes="(max-width: 640px) 100vw, 640px" /></a></p>
+								<p>&nbsp;</p>
+								<h3>To assign a user(s) as a Power BI Admin</h3>
+								<p>Click on the link for the <strong>Power BI</strong> admin pages.</p>
+								<p><a href="../../assets/images/BI_2.png"><img
+											loading="lazy" class="aligncenter wp-image-1741 size-full"
+											src="../../assets/images/BI_2.png"
+											alt="SharePoint Power BI" width="163" height="254" /></a></p>
+								<p>This will take you to the <strong>Getting Started</strong> page.</p>
+								<p><a href="../../assets/images/BI_3.png"><img
+											loading="lazy" class="aligncenter wp-image-1742"
+											src="../../assets/images/BI_3.png"
+											alt="Power BI Admin Center" width="500" height="195"
+											srcset="../../assets/images/BI_3.png 902w, ../../assets/images/BI_3-300x116.png 300w"
+											sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+								<p>Click the link for <strong>Role management</strong>.</p>
+								<p>Here is where you can add/remove users from the Power BI Admin role.</p>
+								<p>Click the plus (<strong>+</strong>) sign and enter the users name in the dialog box
+									that pops up.</p>
+								<p><a href="../../assets/images/BI_4.png"><img
+											loading="lazy" class="aligncenter wp-image-1743"
+											src="../../assets/images/BI_4.png"
+											alt="SharePoint BI" width="350" height="146"
+											srcset="../../assets/images/BI_4.png 434w, ../../assets/images/BI_4-300x125.png 300w"
+											sizes="(max-width: 350px) 100vw, 350px" /></a></p>
+								<p>How to set up Power BI</p>
+								<p>After you purchased Power BI and assigned licenses, log on to a site using an account
+									that has a Power BI licensed assigned (Power BI user).</p>
+								<p>Go to the <strong>Site contents</strong> page for your site.  There you should see an
+									icon for Power BI.</p>
+								<p><strong>Note:</strong> I have seen the icon change a couple times so it may look
+									different than below.  Just look for the one called <strong>Power BI</strong> and
+									click on it.</p>
+								<p><a href="../../assets/images/BI_5.png"><img
+											loading="lazy" class="aligncenter size-full wp-image-1744"
+											src="../../assets/images/BI_5.png"
+											alt="BI_5" width="304" height="400"
+											srcset="../../assets/images/BI_5.png 304w, ../../assets/images/BI_5-228x300.png 228w"
+											sizes="(max-width: 304px) 100vw, 304px" /></a></p>
+								<p>You may then be presented with a screen similar to the one shown below.  You are
+									given the option to have some sample data added to your site, or you can choose to
+									<strong>Use my own data</strong>.</p>
+								<p>Choosing <strong>Add Samples</strong> will add content to your site and pre-populate
+									some of the featured areas of the Power BI site.</p>
+								<p>Choosing <strong>Use my own data</strong> means it will just create the Power BI site
+									and consume the libraries on content already on your site.</p>
+								<p><a href="../../assets/images/BI_6.png"><img
+											loading="lazy" class="aligncenter wp-image-1745"
+											src="../../assets/images/BI_6.png"
+											alt="Power BI" width="500" height="356"
+											srcset="../../assets/images/BI_6.png 895w, ../../assets/images/BI_6-300x213.png 300w"
+											sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+								<p><strong> </strong></p>
+								<p>Choosing <strong>Use my own data</strong> will render a site similar to the one shown
+									below.</p>
+								<p>Notice that the URL is quite different.  It is not a sub-site of your site.  It is
+									stored differently and has a parameter in the URL pointing to your site.</p>
+								<p>If you have multiple document libraries, they will be listed on this page.</p>
+								<p>There are a few sections to this page that warrant being covered in a different blog
+									post to keep this one a bit shorter.  I will post more details about these sections
+									in the future.</p>
+								<p><a href="../../assets/images/BI_7.png"><img
+											loading="lazy" class="aligncenter wp-image-1746"
+											src="../../assets/images/BI_7-1024x624.png"
+											alt="Power BI" width="500" height="305"
+											srcset="../../assets/images/BI_7-1024x624.png 1024w, ../../assets/images/BI_7-300x182.png 300w, ../../assets/images/BI_7.png 1097w"
+											sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+								<p>When you have added content to the libraries, you will see menu options as shown
+									below.</p>
+								<p>To enable a document to take advantage of Power BI, you must <strong>enable
+										it</strong>.</p>
+								<p><a href="../../assets/images/BI_8.png"><img
+											loading="lazy" class="aligncenter size-full wp-image-1747"
+											src="../../assets/images/BI_8.png"
+											alt="BI_8" width="398" height="206"
+											srcset="../../assets/images/BI_8.png 398w, ../../assets/images/BI_8-300x155.png 300w"
+											sizes="(max-width: 398px) 100vw, 398px" /></a></p>
+								<p>Once enabled, you have a new set of menu options.</p>
+								<p><a href="../../assets/images/BI_9.png"><img
+											loading="lazy" class="aligncenter size-full wp-image-1748"
+											src="../../assets/images/BI_9.png"
+											alt="BI_9" width="456" height="249"
+											srcset="../../assets/images/BI_9.png 456w, ../../assets/images/BI_9-300x163.png 300w"
+											sizes="(max-width: 456px) 100vw, 456px" /></a></p>
+								<p><strong>Things to keep in mind</strong></p>
+								<p>Once you add Power BI to a site, the users will see a new link in the QuickLaunch. 
+									If a user has a Power BI license, when they click this link it will send them to the
+									Power BI site, as you would expect.</p>
+								<p>However, if a user does NOT have a Power BI License, as of the writing of this post,
+									the users will be prompted to start a TRIAL!</p>
+								<p><a href="../../assets/images/BI_10.png"><img
+											loading="lazy" class="aligncenter wp-image-1749"
+											src="../../assets/images/BI_10.png"
+											alt="Power BI" width="500" height="238"
+											srcset="../../assets/images/BI_10.png 787w, ../../assets/images/BI_10-300x142.png 300w"
+											sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+								<p>There is no option for disabling this at this time.</p>
+								<p>If a user does NOT have a Power BI license, but a document has been enabled in the
+									Power BI site, a user can still see and leverage some of the advantages.  For
+									example, if you have an Excel document that is using PowerPivot charts or PowerView
+									reports that are showing data from a source like a SharePoint list on your site, you
+									could leverage Power BI to automatically update/refresh the data so your PowerView
+									charts/reports show current information from the list.  Even if a user does not have
+									a Power BI license, any web parts you are using on your site to display the Excel
+									document, will be updated and visible to the user.</p>
+								<p>&nbsp;</p>
+								<p>Happy coding!</p>
+								<p>-Brian</p>
+								<p>&nbsp;</p>
+								<h3>Resources:</h3>
+								<p>Here is a link to the “Power BI for Office 365 &#8211; Overview and Learning” site
+									that has a lot of great information and details.</p>
+								<p><a
+										href="http://office.microsoft.com/en-us/office365-sharepoint-online-enterprise-help/power-bi-for-office-365-overview-and-learning-HA104103581.aspx">http://office.microsoft.com/en-us/office365-sharepoint-online-enterprise-help/power-bi-for-office-365-overview-and-learning-HA104103581.aspx</a>
+								</p>
+								<p>Here is a small sample of the content from the link above to give you an idea of the
+									features available from Power BI:</p>
+								<p><span style="text-decoration: underline;">Features and Services</span></p>
+								<p>Power BI consists of many features and services, and works seamlessly with Excel. Use
+									Excel to create compelling content, data models, and visualizations, and then use
+									Power BI to share, collaborate, and extend those insights (Excel is not part of
+									Power BI for Office 365). More learning content is available for each of these
+									features, by selecting the feature name in the following lists.</p>
+								<p>Self-Service BI Features in Excel – these features extend the data-specific features
+									and capabilities of Excel 2013. Some of these have been available before, some are
+									new.</p>
+								<ul>
+									<li><a
+											href="http://office.microsoft.com/en-us/office365-sharepoint-online-enterprise-help/redir/HA104003813.aspx?CTT=5&amp;origin=HA104103581">Power
+											Query</a> – easily discover and connect to data from public and corporate
+										data sources</li>
+									<li><a
+											href="http://office.microsoft.com/en-us/office365-sharepoint-online-enterprise-help/redir/HA102837110.aspx?CTT=5&amp;origin=HA104103581">Power
+											Pivot</a> – create a sophisticated Data Model directly in Excel</li>
+									<li><a
+											href="http://office.microsoft.com/en-us/office365-sharepoint-online-enterprise-help/redir/HA102835634.aspx?CTT=5&amp;origin=HA104103581">Power
+											View</a> – create reports and analytical views with interactive data
+										visualizations</li>
+									<li><a
+											href="http://office.microsoft.com/en-us/office365-sharepoint-online-enterprise-help/redir/HA104091224.aspx?CTT=5&amp;origin=HA104103581">Power
+											Map</a> – explore and navigate geospatial data on a 3D map experience in
+										Excel</li>
+								</ul>
+								<p>Power BI for Office 365 – these features amplify the self-service BI capabilities
+									created in Excel by making them available in a collaborative online environment.</p>
+								<ul>
+									<li><a href="http://go.microsoft.com/fwlink/?LinkId=313612">Power BI Sites</a> –
+										share, view, and interact with reports in these collaborative Power BI sites
+									</li>
+									<li><a
+											href="http://office.microsoft.com/en-us/office365-sharepoint-online-enterprise-help/redir/HA104167933.aspx?CTT=5&amp;origin=HA104103581">Power
+											BI Q&amp;A</a> – use natural language queries to find, explore, and report
+										over your data</li>
+									<li><a href="http://go.microsoft.com/fwlink/p/?LinkId=306540">Query and Data
+											Management</a> – share and manage queries and data sources, and view query
+										usage analytics</li>
+								</ul>
+								<ul>
+									<li><a href="http://go.microsoft.com/fwlink/?LinkId=279865">Power
+											BI Windows Store App</a><strong> </strong><strong>– </strong>view reports on
+										the go, with the Power BI app</li>
+								</ul>
+								<p>&nbsp;</p>
+								<p><em><a href="../../pages/meet-the-team-2.html#brian" target="_blank">Brian Gough</a> has
+										over 20 years of experience in the IT industry and proves to be a great asset to
+										the Acrowire team. He has twice been recognized by Microsoft and his peers as a
+										SharePoint MVP for his contributions and expertise in the SharePoint
+										community. Brian has recently joined the Acrowire/ILTA Roadshow series as
+										another SharePoint 2013 presenter. </em></p>
+							</div>
+							<div class="entry-utility">
+								This entry was posted in <a href="../../pages/blog.html"
+									rel="category tag">Blog</a> and tagged <a
+									href="../tag/application-development.html" rel="tag">Application
+									Development</a>, <a href="../../pages/tag/business-intelligence.html"
+									rel="tag">Business Intelligence</a>, <a href="../../pages/tag/how-to.html"
+									rel="tag">How To</a>, <a href="../../pages/tag/office-365.html" rel="tag">Office
+									365</a>, <a href="../../pages/tag/power-bi.html" rel="tag">Power BI</a>, <a
+									href="../tag/sharepoint.html" rel="tag">SharePoint</a>. Bookmark the <a
+									href="index.html"
+									title="Permalink to Power BI How To: Setting Up and Assigning Users and Roles"
+									rel="bookmark">permalink</a>. </div>
+						</div>
+						<div id="nav-below" class="navigation">
+							<div class="nav-previous"><a
+									href="../office-365-deep-dive-lync-proves-significant-value-for-legal.html"
+									rel="prev"><span class="meta-nav">&larr;</span> Office 365 Deep Dive: Lync Proves
+									Significant Value for Legal</a></div>
+							<div class="nav-next"><a
+									href="../sharepoint-2013-whats-new-for-legal-atlanta-recap.html"
+									rel="next">SharePoint 2013: What&#8217;s New for Legal? Atlanta Recap <span
+										class="meta-nav">&rarr;</span></a></div>
+						</div>
+					</div>
+					<div id="comments">
+						<div id="respond" class="comment-respond">
+							<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow"
+										id="cancel-comment-reply-link" href="#"
+										style="display:none;">Cancel reply</a></small></h3>
+							<p class="must-log-in">You must be <a
+									href="#2b89#%2Fpower-bi-how-to-setting-up-and-assigning-users-and-roles%2F">logged
+									in</a> to post a comment.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-300">
+					<div class="sideright">
+						<ul>
+							<li id="text-6" class="widget-container widget_text">
+								<div class="textwidget"><img
+										src="../../assets/images/img-question.jpg"><br />
+									<a href="../../pages/get-started.html">Get Started</a></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="content-inner-sidebar-bottom"></div>
+		</div>
+		<div id="container">
+			<div id="main-curve-bottom"></div>
+			<div id="footer">
+				<div id="footer-col">
+					<div class="col-920">
+						<div class="col-196 equal"><img
+								src="../../assets/images/logo-footer.png"
+								alt="" width="129" height="38" /></div>
+						<div class="vertical-separator equal"></div>
+						<div class="col-160 equal">
+							<ul>
+								<li><a href="../../pages/about-us.html">About Us</a></li>
+								<li><a href="../../pages/get-started.html">Contact Us</a></li>
+								<li><a href="../../pages/news.html">Featured Articles</a></li>
+							</ul>
+						</div>
+						<div class="col-284 equal">
+							<ul class="socialicon">
+								<li></li>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div id="footer-text">
+					Copyright © Acrowire, LLC. All rights reserved.
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../../assets/js/jquery-1.4.2.js"></script> 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> 	<script src="../../assets/js/jquery.cycle.all.js" type="text/javascript"></script> 	<script type="text/javascript" src="../../assets/js/jquery.colorbox.js"></script> 	<script type="text/javascript" src="../../assets/js/dropdown.js"></script> 	<script type="text/javascript" src="../../assets/js/jquery.equalheights.js"></script> 	<script type="text/javascript" src="../../assets/js/jquery.corner.js"></script>
+	
+</body>
+
+</html>
+<!--  21:06:11 -->

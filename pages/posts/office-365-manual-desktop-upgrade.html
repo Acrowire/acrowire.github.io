@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8" />
+	<link  rel="stylesheet" href="../../assets/css/blog-style.css" />
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<title>Office 365 Manual Desktop Upgrade | Acrowire</title>
+	
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Acrowire, Calvin Bryant" />
+	<meta name="description" content="Technology Consulting For Business" />
+	<meta name="keywords"
+		content="Acrowire Charlotte North Carolina, Cloud Services, Custom Application Development, Business Process Improvement, Website Strategy and Development, Microsoft Silverlight, Cloud Hosted Email, Cloud CRM Online Contact Relationship Management, Back Office Automation, Cloud Computing,Charlotte, North Carolina, IT, South Carolina, Business Technology, Ted Theodoropoulos, Consultant" />
+	<link rel="shortcut icon" href="../assets/images/favicon.ico" />
+	
+	
+</head>
+
+<body>
+	<div id="container">
+		<div id="topnavigation"></div>
+		<div id="main-curve-top"></div>
+		<div id="main">
+			<div id="top">
+				<div id="logo"><a href="../../index.html"><img
+							src="../../assets/images/logo.png"
+							alt="" /></a></div>
+				<div id="topright">
+				</div>
+			</div>
+			<ul class="ff"
+				style="width:30px !important; position:relative !important; top:53px; left:25px;  z-index:99999;">
+				<li><a style="position:relative; z-index:99999;" href="../../index.html" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image20','','../assets/images/icon-homeOver.gif',1)"><img
+							src="../assets/images/icon-home.gif"
+							width="13" height="15" border="0" id="Image20" /></a></li>
+			</ul>
+			<div id="mainmenu" class="menu-header-container">
+				<div class="mainmenu_inner">
+					<ul id="menu">
+						<li><a href="../../pages/about-us.html">About Us</a>
+							<ul class="sub-menu">
+								<li><a href="../../pages/business-minds-with-technology-solutions.html">Our Approach</a>
+								</li>
+								<li><a href="../../pages/careers.html">Careers</a></li>
+							</ul>
+						</li>
+						<li><a href="../../pages/services-main.html">Services</a>
+							<ul class="sub-menu">
+								<li><a href="../../pages/envisioning-01-4.html">Envisioning</a></li>
+								<li><a href="../../pages/customer-application-development.html">Custom Application
+										Development</a></li>
+								<li><a href="../../pages/portals.html">Intranet/Extranet Development &#038; Design</a></li>
+								<li><a href="../../pages/businessintelligence.html">Business Intelligence</a></li>
+							</ul>
+						</li>
+						<li><a href="../../pages/success-stories-main.html">Success Stories</a>
+							<ul class="sub-menu">
+								<li><a href="../../pages/testimonies.html">Testimonials</a></li>
+								<li><a href="../../pages/case-studies.html">Case Studies</a></li>
+							</ul>
+						</li>
+						<li><a href="../../pages/thought-leadership-main-page.html">Thought Leadership</a>
+							<ul class="sub-menu">
+								<li><a href="../../pages/videos.html">Webinars &#038; Podcasts</a></li>
+								<li><a href="../../pages/blog.html">Blog</a></li>
+								<li><a href="../../pages/articles.html">Featured Articles</a></li>
+								<li><a href="../../pages/news-and-events.html">News</a></li>
+							</ul>
+						</li>
+						<li><a href="../../pages/get-started.html">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="header-inner">
+				<h1>Office 365 Manual Desktop Upgrade</h1>
+				<img src="../../assets/images/globe.png" alt="Acrowire"
+					class="imgtitle" />
+			</div>
+			<div id="content-inner-sidebar">
+				<div class="col-620">
+					<div id="maintext">
+						<br />
+						<div id="nav-above" class="navigation">
+							<div class="nav-previous"><a href="../../pages/score-and-office-365.html" rel="prev"><span
+										class="meta-nav">&larr;</span> SCORE and Office 365</a></div>
+							<div class="nav-next"><a href="../../pages/vdi-in-the-smb.html" rel="next">VDI in the SMB <span
+										class="meta-nav">&rarr;</span></a></div>
+						</div>
+						<div id="post-885"
+							class="post-885 post type-post status-publish format-standard hentry category-blog tag-cloud tag-office-365">
+							<h1 class="entry-title">Office 365 Manual Desktop Upgrade</h1>
+							<div class="entry-meta">
+								<span class="meta-prep meta-prep-author">Posted on</span> <a href="index.html"
+									title="6:20 pm" rel="bookmark"><span class="entry-date">February 27, 2012</span></a>
+								<span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n"
+										href="../author/ted.html" title="View all posts by Ted Theodoropoulos">Ted
+										Theodoropoulos</a></span> </div>
+							<div class="entry-content">
+								<div>
+									<p>There is no shortage of documentation on the process of upgrading BPOS to Office
+										365.  The problem is most of it is verbose and hard to follow.  Some clients
+										prefer to take care of the on premise work themselves during their migration, so
+										we decided to create a concise document together to guide them.  There are a
+										number of ways to automate the process but for customers with just a few dozen
+										workstations it is often easier to manually upgrade the desktops.  For bigger
+										installations it definitely makes sense to use a logon script or group policy
+										object to deploy the update.  This article focuses on the manual upgrade process
+										for Windows desktops in smaller environments.</p>
+									<p>Before we jump in to the process, there are some important things of which to
+										take note.  Office 365 <strong>no longer supports several legacy applications
+											such as Outlook 2003 and Internet Explorer 6</strong>.  Accessing Outlook
+										Web Access or the the Online Portal with IE 6 will behave unpredictably and
+										Outlook 2003 will only work via POP and IMAP in an unsupported configuration. 
+										It is also important to note that users must have recently changed their
+										password in BPOS before the transition to avoid a forced reset immediately after
+										the transition.  The focus should be on minimizing the chaos the Monday morning
+										after a transition and <strong>requiring users to change their password the week
+											before the transition</strong> will pay dividends.  It will avoid users with
+										old passwords being forced to change but it will also increase the likelihood
+										that users actually remember their passwords.  This way your administrators can
+										focus on resolving real problems instead of wasting time on preventable
+										situations.</p>
+									<p>To further avoid issues, make the necessary DNS changes to your domain before the
+										transition.  DNS changes can take time to propagate and you do not want to wait
+										until Monday morning to do this.  These DNS settings are subject to change so
+										you should do a web search to find out what settings are currently required.  If
+										you are not familiar with making changes to your DNS settings then you should
+										probably engage a Microsoft Partner.  It is not a difficult process but doing it
+										incorrectly or accidentally deleting the wrong DNS records can cause serious
+										problems.</p>
+									<p><strong>Step 1</strong>: Download the Office 365 tools locally to a network drive
+										or a USB thumb drive.  There are two versions of Microsoft Lync (32 and 64 bit)
+										and the Office 365 Configuration Tool which should be downloaded from the <a
+											href="https://portal.microsoftonline.com/" target="_blank">Microsoft Online
+											Portal</a> using the “Downloads” link in the right margin as shown below.
+									</p>
+									<p style="text-align: center;"> <a
+											href="../../assets/images/Step-1-Downloads-link.png"><br />
+											<img class="size-medium wp-image-887 aligncenter"
+												alt="Step-1-Downloads-link"
+												src="../../assets/images/Step-1-Downloads-link-300x108.png"
+												width="300" height="108"
+												srcset="../../assets/images/Step-1-Downloads-link-300x108.png 300w, ../../assets/images/Step-1-Downloads-link.png 898w"
+												sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+									<p><strong>Step 2</strong>: Uninstall the Microsoft Online Services Sign In
+										application as well as Microsoft Communicator 2007 if it is installed.</p>
+									<p><strong>Step 3</strong>: Determine whether your operating system is 32 or 64 bit
+										and install the appropriate version of Microsoft Lync that was previously
+										downloaded.  To determine your system type, go to your “Start” menu and right
+										click on “My Computer”.  You should see a dialog box like the one below which
+										provides this information.</p>
+									<p style="text-align: center;"><a
+											href="../../assets/images/Step-3-OS-Type_thumb.png"><img
+												loading="lazy" class="size-medium wp-image-888 aligncenter"
+												alt="Step-3-OS-Type_thumb"
+												src="../../assets/images/Step-3-OS-Type_thumb-300x125.png"
+												width="300" height="125"
+												srcset="../../assets/images/Step-3-OS-Type_thumb-300x125.png 300w, ../../assets/images/Step-3-OS-Type_thumb.png 530w"
+												sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+									<p><strong>Step 4</strong>: Run the Office 365 Configuration Tool.  This tool
+										configures Lync and updates Outlook to send and receive mail from Office 365. 
+										When running the configuration tool you will be prompted for your login
+										credentials.  If the system administrator is prepping the workstations he or she
+										can use their credentials in lieu of the end user’s credentials.</p>
+									<p><strong>Step 5</strong>: The system administrator will receive an email from
+										Microsoft once the transition is complete.  Users are then able to log in to
+										Microsoft Outlook and Lync.  If the appropriate DNS settings have been made and
+										the configuration tool has been run then Outlook and Lync should function
+										properly.  There is no need to create a new mail profile for the new setup.</p>
+									<div></div>
+									<div></div>
+								</div>
+								<div></div>
+							</div>
+							<div class="entry-utility">
+								This entry was posted in <a href="../../pages/blog.html"
+									rel="category tag">Blog</a> and tagged <a href="../../pages/tag/cloud.html"
+									rel="tag">Cloud</a>, <a href="../../pages/tag/office-365.html" rel="tag">Office
+									365</a>. Bookmark the <a href="index.html"
+									title="Permalink to Office 365 Manual Desktop Upgrade" rel="bookmark">permalink</a>.
+							</div>
+						</div>
+						<div id="nav-below" class="navigation">
+							<div class="nav-previous"><a href="../../pages/score-and-office-365.html" rel="prev"><span
+										class="meta-nav">&larr;</span> SCORE and Office 365</a></div>
+							<div class="nav-next"><a href="../../pages/vdi-in-the-smb.html" rel="next">VDI in the SMB <span
+										class="meta-nav">&rarr;</span></a></div>
+						</div>
+					</div>
+					<div id="comments">
+						<div id="respond" class="comment-respond">
+							<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow"
+										id="cancel-comment-reply-link" href="#"
+										style="display:none;">Cancel reply</a></small></h3>
+							<p class="must-log-in">You must be <a
+									href="#8d4b#%2Foffice-365-manual-desktop-upgrade%2F">logged
+									in</a> to post a comment.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-300">
+					<div class="sideright">
+						<ul>
+							<li id="text-6" class="widget-container widget_text">
+								<div class="textwidget"><img
+										src="../../assets/images/img-question.jpg"><br />
+									<a href="../../pages/get-started.html">Get Started</a></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="content-inner-sidebar-bottom"></div>
+		</div>
+		<div id="container">
+			<div id="main-curve-bottom"></div>
+			<div id="footer">
+				<div id="footer-col">
+					<div class="col-920">
+						<div class="col-196 equal"><img
+								src="../../assets/images/logo-footer.png"
+								alt="" width="129" height="38" /></div>
+						<div class="vertical-separator equal"></div>
+						<div class="col-160 equal">
+							<ul>
+								<li><a href="../../pages/about-us.html">About Us</a></li>
+								<li><a href="../../pages/get-started.html">Contact Us</a></li>
+								<li><a href="../../pages/news.html">Featured Articles</a></li>
+							</ul>
+						</div>
+						<div class="col-284 equal">
+							<ul class="socialicon">
+								<li></li>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div id="footer-text">
+					Copyright © Acrowire, LLC. All rights reserved.
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../../assets/js/jquery-1.4.2.js"></script> 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> 	<script src="../../assets/js/jquery.cycle.all.js" type="text/javascript"></script> 	<script type="text/javascript" src="../../assets/js/jquery.colorbox.js"></script> 	<script type="text/javascript" src="../../assets/js/dropdown.js"></script> 	<script type="text/javascript" src="../../assets/js/jquery.equalheights.js"></script> 	<script type="text/javascript" src="../../assets/js/jquery.corner.js"></script>
+	
+</body>
+
+</html>
+<!--  21:06:49 -->

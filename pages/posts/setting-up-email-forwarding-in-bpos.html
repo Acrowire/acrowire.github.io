@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8" />
+	<link  rel="stylesheet" href="../../assets/css/blog-style.css" />
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<title>Setting Up Email Forwarding in BPOS | Acrowire</title>
+	
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Acrowire, Calvin Bryant" />
+	<meta name="description" content="Technology Consulting For Business" />
+	<meta name="keywords"
+		content="Acrowire Charlotte North Carolina, Cloud Services, Custom Application Development, Business Process Improvement, Website Strategy and Development, Microsoft Silverlight, Cloud Hosted Email, Cloud CRM Online Contact Relationship Management, Back Office Automation, Cloud Computing,Charlotte, North Carolina, IT, South Carolina, Business Technology, Ted Theodoropoulos, Consultant" />
+	<link rel="shortcut icon" href="../assets/images/favicon.ico" />
+	
+	
+</head>
+
+<body>
+	<div id="container">
+		<div id="topnavigation"></div>
+		<div id="main-curve-top"></div>
+		<div id="main">
+			<div id="top">
+				<div id="logo"><a href="../../index.html"><img
+							src="../../assets/images/logo.png"
+							alt="" /></a></div>
+				<div id="topright">
+				</div>
+			</div>
+			<ul class="ff"
+				style="width:30px !important; position:relative !important; top:53px; left:25px;  z-index:99999;">
+				<li><a style="position:relative; z-index:99999;" href="../../index.html" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image20','','../assets/images/icon-homeOver.gif',1)"><img
+							src="../assets/images/icon-home.gif"
+							width="13" height="15" border="0" id="Image20" /></a></li>
+			</ul>
+			<div id="mainmenu" class="menu-header-container">
+				<div class="mainmenu_inner">
+					<ul id="menu">
+						<li><a href="../../pages/about-us.html">About Us</a>
+							<ul class="sub-menu">
+								<li><a href="../../pages/business-minds-with-technology-solutions.html">Our Approach</a>
+								</li>
+								<li><a href="../../pages/careers.html">Careers</a></li>
+							</ul>
+						</li>
+						<li><a href="../../pages/services-main.html">Services</a>
+							<ul class="sub-menu">
+								<li><a href="../../pages/envisioning-01-4.html">Envisioning</a></li>
+								<li><a href="../../pages/customer-application-development.html">Custom Application
+										Development</a></li>
+								<li><a href="../../pages/portals.html">Intranet/Extranet Development &#038; Design</a></li>
+								<li><a href="../../pages/businessintelligence.html">Business Intelligence</a></li>
+							</ul>
+						</li>
+						<li><a href="../../pages/success-stories-main.html">Success Stories</a>
+							<ul class="sub-menu">
+								<li><a href="../../pages/testimonies.html">Testimonials</a></li>
+								<li><a href="../../pages/case-studies.html">Case Studies</a></li>
+							</ul>
+						</li>
+						<li><a href="../../pages/thought-leadership-main-page.html">Thought Leadership</a>
+							<ul class="sub-menu">
+								<li><a href="../../pages/videos.html">Webinars &#038; Podcasts</a></li>
+								<li><a href="../../pages/blog.html">Blog</a></li>
+								<li><a href="../../pages/articles.html">Featured Articles</a></li>
+								<li><a href="../../pages/news-and-events.html">News</a></li>
+							</ul>
+						</li>
+						<li><a href="../../pages/get-started.html">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="header-inner">
+				<h1>Setting Up Email Forwarding in BPOS</h1>
+				<img src="../../assets/images/globe.png" alt="Acrowire"
+					class="imgtitle" />
+			</div>
+			<div id="content-inner-sidebar">
+				<div class="col-620">
+					<div id="maintext">
+						<br />
+						<div id="nav-above" class="navigation">
+							<div class="nav-previous"><a href="../../pages/the-stakeholder-perspective-conclusion.html"
+									rel="prev"><span class="meta-nav">&larr;</span> The Stakeholder Perspective &#8211;
+									Conclusion</a></div>
+							<div class="nav-next"><a href="../../pages/what-google-doesnt-want-you-to-know.html"
+									rel="next">What Google Doesn&#8217;t Want You to Know <span
+										class="meta-nav">&rarr;</span></a></div>
+						</div>
+						<div id="post-923"
+							class="post-923 post type-post status-publish format-standard hentry category-blog">
+							<h1 class="entry-title">Setting Up Email Forwarding in BPOS</h1>
+							<div class="entry-meta">
+								<span class="meta-prep meta-prep-author">Posted on</span> <a href="index.html"
+									title="7:20 pm" rel="bookmark"><span class="entry-date">March 29, 2011</span></a>
+								<span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n"
+										href="../author/ted.html" title="View all posts by Ted Theodoropoulos">Ted
+										Theodoropoulos</a></span> </div>
+							<div class="entry-content">
+								<div>
+									<p>Until recently, users of Microsoft’s Business Productivity Online Suite (BPOS)
+										had to open a support ticket to enable server side email forwarding.  However,
+										Microsoft released a set of PowerShell scripts in February 2011 which allows
+										administrators who are comfortable with the command line to set this up on their
+										own.  Using the command line can be intimidating, but it isn’t that difficult if
+										proper instructions are provided.  Microsoft provides instructions and even a
+										short screencast on how to do this <strong>but both leave out important
+											steps</strong>.  I’ll try to fill in the gaps in this post.<br />
+										Note: <strong>Only BPOS administrators can perform this process</strong>.  End
+										users will not be able to set up forwarding using this method even on their own
+										account.</p>
+									<p><strong>1.</strong> If you are an administrator for your BPOS account then the
+										first thing to do is download and <strong>install the Microsoft Online Services
+											Migration Tools</strong>.  Even though you won’t be migrating any data,
+										these tools install the BPOS scripts needed.  There is a 32 bit and a 64
+										bit version of the tool available.</p>
+									<p><strong>2.</strong> In order to have emails forwarded to an email address outside
+										of your domain you must <strong>create a contact record </strong>using the
+										destination email address.  This can be done using the BPOS Administration
+										Center by clicking “New contact” on the “Service Settings” tab.</p>
+									<p style="text-align: center;"><a
+											href="../../assets/images/SNAGHTML1617d7ef.png"><img
+												loading="lazy" class="size-full wp-image-926 aligncenter"
+												alt="SNAGHTML1617d7ef"
+												src="../../assets/images/SNAGHTML1617d7ef.png"
+												width="283" height="242" /></a></p>
+									<p>If you are trying to forward emails to <a
+											href="mailto:billgates@yahoo.com">billgates@yahoo.com</a>, that email
+										address that must be specified in the contact form.</p>
+									<p style="text-align: center;"><a
+											href="../../assets/images/SNAGHTML161d4cb9_thumb.png"><img
+												loading="lazy" class="aligncenter size-full wp-image-924"
+												alt="SNAGHTML161d4cb9_thumb"
+												src="../../assets/images/SNAGHTML161d4cb9_thumb.png"
+												width="456" height="190"
+												srcset="../../assets/images/SNAGHTML161d4cb9_thumb.png 456w, ../../assets/images/SNAGHTML161d4cb9_thumb-300x125.png 300w"
+												sizes="(max-width: 456px) 100vw, 456px" /></a></p>
+									<p><strong>3.</strong> <strong>Open the Migration Command Shell</strong> from the
+										Microsoft Online Services\Migration folder on your Start menu.</p>
+									<p style="text-align: center;"><a
+											href="../../assets/images/SNAGHTML167e1a47_thumb.png"><img
+												loading="lazy" class="aligncenter size-full wp-image-925"
+												alt="SNAGHTML167e1a47_thumb"
+												src="../../assets/images/SNAGHTML167e1a47_thumb.png"
+												width="242" height="168" /></a></p>
+									<p><strong>4.</strong> <strong>Execute the Set-MSOnlineAlternateRecipient
+											command</strong>.  You can use the syntax shown below:</p>
+									<blockquote>
+										<p>Set-MSOnlineAlternateRecipient –DeliverToBoth $True –Identity &lt;user&gt;
+											–AlternateRecipient &lt;destination email&gt; –Credential (Get-Credential)
+										</p>
+									</blockquote>
+									<p>If you open a generic PowerShell session instead of using the MOS Command Shell
+										as shown in Step 3, you will get an error saying “The term
+										‘Set-MSOnlineAlternateRecipient’ is not recognized as the name of a cmdlet….”
+									</p>
+									<p><strong>5.</strong> Upon successful completion, you will see a message stating
+										that you “Successfully set alternate recipient for mailbox…”</p>
+									<p style="text-align: center;"><a
+											href="../../assets/images/image_thumb1.png"><img
+												loading="lazy" class="aligncenter  wp-image-930" alt="image_thumb1"
+												src="../../assets/images/image_thumb1.png"
+												width="600" height="43"
+												srcset="../../assets/images/image_thumb1.png 667w, ../../assets/images/image_thumb1-300x21.png 300w"
+												sizes="(max-width: 600px) 100vw, 600px" /></a><a
+											href="../../assets/images/image_thumb1-1.png"><br />
+										</a></p>
+									<div></div>
+									<div></div>
+								</div>
+								<div></div>
+							</div>
+							<div class="entry-utility">
+								This entry was posted in <a href="../../pages/blog.html"
+									rel="category tag">Blog</a>. Bookmark the <a href="index.html"
+									title="Permalink to Setting Up Email Forwarding in BPOS"
+									rel="bookmark">permalink</a>. </div>
+						</div>
+						<div id="nav-below" class="navigation">
+							<div class="nav-previous"><a href="../../pages/the-stakeholder-perspective-conclusion.html"
+									rel="prev"><span class="meta-nav">&larr;</span> The Stakeholder Perspective &#8211;
+									Conclusion</a></div>
+							<div class="nav-next"><a href="../../pages/what-google-doesnt-want-you-to-know.html"
+									rel="next">What Google Doesn&#8217;t Want You to Know <span
+										class="meta-nav">&rarr;</span></a></div>
+						</div>
+					</div>
+					<div id="comments">
+						<div id="respond" class="comment-respond">
+							<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow"
+										id="cancel-comment-reply-link" href="#"
+										style="display:none;">Cancel reply</a></small></h3>
+							<p class="must-log-in">You must be <a
+									href="#ff3a#%2Fsetting-up-email-forwarding-in-bpos%2F">logged
+									in</a> to post a comment.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-300">
+					<div class="sideright">
+						<ul>
+							<li id="text-6" class="widget-container widget_text">
+								<div class="textwidget"><img
+										src="../../assets/images/img-question.jpg"><br />
+									<a href="../../pages/get-started.html">Get Started</a></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="content-inner-sidebar-bottom"></div>
+		</div>
+		<div id="container">
+			<div id="main-curve-bottom"></div>
+			<div id="footer">
+				<div id="footer-col">
+					<div class="col-920">
+						<div class="col-196 equal"><img
+								src="../../assets/images/logo-footer.png"
+								alt="" width="129" height="38" /></div>
+						<div class="vertical-separator equal"></div>
+						<div class="col-160 equal">
+							<ul>
+								<li><a href="../../pages/about-us.html">About Us</a></li>
+								<li><a href="../../pages/get-started.html">Contact Us</a></li>
+								<li><a href="../../pages/news.html">Featured Articles</a></li>
+							</ul>
+						</div>
+						<div class="col-284 equal">
+							<ul class="socialicon">
+								<li></li>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div id="footer-text">
+					Copyright © Acrowire, LLC. All rights reserved.
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../../assets/js/jquery-1.4.2.js"></script> 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> 	<script src="../../assets/js/jquery.cycle.all.js" type="text/javascript"></script> 	<script type="text/javascript" src="../../assets/js/jquery.colorbox.js"></script> 	<script type="text/javascript" src="../../assets/js/dropdown.js"></script> 	<script type="text/javascript" src="../../assets/js/jquery.equalheights.js"></script> 	<script type="text/javascript" src="../../assets/js/jquery.corner.js"></script>
+	
+</body>
+
+</html>
+<!--  21:07:21 -->

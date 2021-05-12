@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8" />
+	<link  rel="stylesheet" href="../../assets/css/blog-style.css" />
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<title>Technical Debt &#8211; Part 1: Definition | Acrowire</title>
+	
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Acrowire, Calvin Bryant" />
+	<meta name="description" content="Technology Consulting For Business" />
+	<meta name="keywords"
+		content="Acrowire Charlotte North Carolina, Cloud Services, Custom Application Development, Business Process Improvement, Website Strategy and Development, Microsoft Silverlight, Cloud Hosted Email, Cloud CRM Online Contact Relationship Management, Back Office Automation, Cloud Computing,Charlotte, North Carolina, IT, South Carolina, Business Technology, Ted Theodoropoulos, Consultant" />
+	<link rel="shortcut icon" href="../assets/images/favicon.ico" />
+	
+	
+</head>
+
+<body>
+	<div id="container">
+		<div id="topnavigation"></div>
+		<div id="main-curve-top"></div>
+		<div id="main">
+			<div id="top">
+				<div id="logo"><a href="../../index.html"><img
+							src="../../assets/images/logo.png"
+							alt="" /></a></div>
+				<div id="topright">
+				</div>
+			</div>
+			<ul class="ff"
+				style="width:30px !important; position:relative !important; top:53px; left:25px;  z-index:99999;">
+				<li><a style="position:relative; z-index:99999;" href="../../index.html" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image20','','../assets/images/icon-homeOver.gif',1)"><img
+							src="../assets/images/icon-home.gif"
+							width="13" height="15" border="0" id="Image20" /></a></li>
+			</ul>
+			<div id="mainmenu" class="menu-header-container">
+				<div class="mainmenu_inner">
+					<ul id="menu">
+						<li><a href="../../pages/about-us.html">About Us</a>
+							<ul class="sub-menu">
+								<li><a href="../../pages/business-minds-with-technology-solutions.html">Our Approach</a>
+								</li>
+								<li><a href="../../pages/careers.html">Careers</a></li>
+							</ul>
+						</li>
+						<li><a href="../../pages/services-main.html">Services</a>
+							<ul class="sub-menu">
+								<li><a href="../../pages/envisioning-01-4.html">Envisioning</a></li>
+								<li><a href="../../pages/customer-application-development.html">Custom Application
+										Development</a></li>
+								<li><a href="../../pages/portals.html">Intranet/Extranet Development &#038; Design</a></li>
+								<li><a href="../../pages/businessintelligence.html">Business Intelligence</a></li>
+							</ul>
+						</li>
+						<li><a href="../../pages/success-stories-main.html">Success Stories</a>
+							<ul class="sub-menu">
+								<li><a href="../../pages/testimonies.html">Testimonials</a></li>
+								<li><a href="../../pages/case-studies.html">Case Studies</a></li>
+							</ul>
+						</li>
+						<li><a href="../../pages/thought-leadership-main-page.html">Thought Leadership</a>
+							<ul class="sub-menu">
+								<li><a href="../../pages/videos.html">Webinars &#038; Podcasts</a></li>
+								<li><a href="../../pages/blog.html">Blog</a></li>
+								<li><a href="../../pages/articles.html">Featured Articles</a></li>
+								<li><a href="../../pages/news-and-events.html">News</a></li>
+							</ul>
+						</li>
+						<li><a href="../../pages/get-started.html">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="header-inner">
+				<h1>Technical Debt - Part 1: Definition</h1>
+				<img src="../../assets/images/globe.png" alt="Acrowire"
+					class="imgtitle" />
+			</div>
+			<div id="content-inner-sidebar">
+				<div class="col-620">
+					<div id="maintext">
+						<br />
+						<div id="nav-above" class="navigation">
+							<div class="nav-previous"><a href="../../pages/facebook-email-for-business.html"
+									rel="prev"><span class="meta-nav">&larr;</span> Facebook Email for Business?</a>
+							</div>
+							<div class="nav-next"><a href="../../pages/technical-debt-part-2-identification.html"
+									rel="next">Technical Debt &#8211; Part 2: Identification <span
+										class="meta-nav">&rarr;</span></a></div>
+						</div>
+						<div id="post-945"
+							class="post-945 post type-post status-publish format-standard hentry category-blog tag-technical-debt">
+							<h1 class="entry-title">Technical Debt &#8211; Part 1: Definition</h1>
+							<div class="entry-meta">
+								<span class="meta-prep meta-prep-author">Posted on</span> <a href="index.html"
+									title="7:35 pm" rel="bookmark"><span class="entry-date">November 12, 2010</span></a>
+								<span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n"
+										href="../author/ted.html" title="View all posts by Ted Theodoropoulos">Ted
+										Theodoropoulos</a></span> </div>
+							<div class="entry-content">
+								<p>Technical debt is a subject that is getting a lot of attention lately. <a
+										href="http://www.gartner.com/it/page.jsp?id=1439513">Gartner estimates global
+										technical debt at $500 Billion</a> and projects it to reach $1 Trillion in five
+									years. Surprisingly, however, technical debt is a concept that many people in
+									business and technology fail to fully understand. The reason this lack of
+									understanding is so surprising is the magnitude of the problem and the fact that
+									almost every business has (or will have) technical debt and regularly pays interest
+									on it. On the surface, the concept of technical debt is very simple. The term <a
+										href="http://c2.com/doc/oopsla92.html">was coined by Ward Cunningham in
+										1992</a> to describe the costs associated with maintaining and enhancing a
+									platform where shortcuts were taken in the design or implementation in order to meet
+									financial or timeline objectives. Examples of these shortcuts include failure to do
+									the following:</p>
+								<p>· document system architectures</p>
+								<p>· provide adequate code coverage in QA processes</p>
+								<p>· implement standards and conventions</p>
+								<p>· properly understand the technologies leveraged</p>
+								<p>· properly understanding the processes the technology is designed to support</p>
+								<p>· refactor code base or architecture to meet changing needs</p>
+								<p><a href="http://www.youtube.com/watch?v=pqeJFYwnkjE">Cunningham followed up with a
+										brief video</a> to further describe and clarify the concept in 2009. The debt
+									metaphor he describes fits surprisingly well. Just as in finance, debt can provide a
+									valuable tool to expand more rapidly than you would be able to otherwise. However,
+									if you accumulate too much debt the majority of your resources will need to focus on
+									servicing that debt. One can think of the principal amount of the technical debt as
+									the cost associated with fixing the problem and the interest as any business cost
+									associated with the shortcomings. The loss in productivity a programmer might
+									experience enhancing an undocumented application is an example of interest.</p>
+								<p>The key difference between financial and technical debt is that the former is usually
+									very visible and easy to quantify while the latter is not. There aren’t any
+									financial calculators that allow you to input a few parameters and have it calculate
+									a number that tells you how much technical debt you have. When you assume technical
+									debt you are acquiring an asset (working software) at a lower expense (in terms of
+									time or capital) than the true cost of the asset. The gap between the price paid and
+									the true cost represents the technical debt.</p>
+								<p>Organizations with mature risk management practices will often track these types of
+									technology gaps in a centralized way. However, few have formal governance processes
+									to identify, quantify, prioritize, and resolve technical debt in an effective and
+									coordinated way. Even if those processes exist they usually reside in different
+									areas of the organization (i.e. internal audit, operational risk management, etc.)
+									and coordination becomes difficult. I will talk about each of these processes in
+									detail in subsequent posts.</p>
+								<p><strong>Strategic Debt</strong></p>
+								<p>There are several types of technical debt and some have even attempted to create <a
+										href="http://blogs.construx.com/blogs/stevemcc/archive/2007/11/01/technical-debt-2.aspx">a
+										taxonomy</a> to classify it. However, at a high level the most important
+									distinction is the difference between strategic and nonstrategic technical debt.
+									Strategic debt describes situations where tradeoffs are made in a proactive and
+									measured way. One might wonder why anyone would choose to make compromises that will
+									have consequences down the road. The two most common reasons debt is accumulated is
+									to save money and/or time. It can make perfectly good sense to take shortcuts to get
+									across the goal line when there is a limited budget or time to market is a big
+									concern.</p>
+								<p>What makes debt strategic is the fact that the pros and cons were evaluated and an
+									informed decision was made by the appropriate stakeholders to assume and manage the
+									debt to help meet strategic objectives. It is important to recognize that just
+									because someone was aware of the technical debt beforehand and made a conscious
+									decision to assume it does not make it strategic. For example, the debt created when
+									a development manager decides on his own to postpone documenting the system his team
+									is building until after implementation cannot be considered strategic to the
+									organization. It may be strategic to that particular manager’s objectives but may be
+									in conflict with the interests of the organization as a whole.</p>
+								<p>The decision to assume the debt must be explicit and made by key stakeholders based
+									on a reasonably accurate assessment of the risks and rewards contained therein.
+									Additionally, process must exist to manage technical debt to ensure that it
+									maintains visibility and is paid back at the appropriate point in time. Any debt
+									that does not meet these criteria cannot be considered strategic. Below is a
+									scenario which describes strategic technical debt.</p>
+								<blockquote>
+									<p>An emerging opportunity has been identified and the ability to fully capitalize
+										is directly tied to the organization’s ability to deliver a timely solution.
+										There is also a limited amount of budget allocated to providing a production
+										ready solution. To meet project goals, an open source platform which allows
+										rapid application development is chosen. However, the platform has not been
+										proven to support the volume which would be eventually required if best case
+										projections materialize.</p>
+									<p>The potential gap the platform brings to the table is discussed with stakeholders
+										and without the reduced cost and shorter timeline the architecture provides it
+										will not be possible to move forward. To mitigate the risk, the company assigns
+										resources to closely monitor usage and routines are put in place where senior
+										leaders meet twice a month to evaluate revised projections. If and when the
+										projections indicate that the platform might not be able to support usage, the
+										plan to migrate to the long term architecture will be executed.</p>
+								</blockquote>
+								<p><strong>Nonstrategic Debt</strong></p>
+								<p>While assuming strategic technical debt to help meet objectives can be in the
+									organization’s best interest, assuming nonstrategic debt almost always is not.
+									Nonstrategic technical debt describes situations where gaps are created without
+									stakeholder approval and the implications to strategic objectives aren’t properly
+									considered. The sources of nonstrategic debt are numerous but often result from
+									process deficiencies.</p>
+								<p>One frequent source of nonstrategic technical debt is low quality code. Sometimes
+									code is written poorly right out of the gate because standards and conventions
+									aren’t enforced and QA processes don’t exist. A more common reason code quality
+									suffers is because shortcuts often must be taken to meet the time constraints
+									usually associated with enhancement requests.</p>
+								<p>In software development, system requirements change often. This change can be due to
+									real changes in the environment or our understanding of it. As the environment
+									changes or our understanding of it evolves, the code we write must be modified to
+									support that. These modifications can make systems complicated and difficult to
+									support if routines aren’t put in place to refactor code when necessary. It is
+									natural that systems are complex but real challenges can arise when they become
+									complicated. There is a distinct difference between complexity and complicatedness
+									and <a
+										href="http://deepfreeze9.blogspot.com/2007/09/software-complex-vs-complicated.html">much
+										has been written on why the distinction is important</a>.</p>
+								<p>I will dive deeper into governance in a subsequent article but it makes sense to
+									point out that that many sources of nonstrategic technical debt such as poor code
+									quality can be managed or avoided. By adopting development processes that embrace
+									change and put an emphasis on code quality is critical. Many Agile processes
+									implement controls to mitigate the risk of poor code quality. Extreme programming
+									(XP), for example, leverages pair programming where developers write code in pairs
+									which increases code quality by having the benefit of two different perspectives on
+									how to solve technical challenges. The Scrum development methodology requires that a
+									“product owner” who represents the business and QA resources play active roles
+									directly in the development process. Alignment to business objectives and quality
+									are baked directly into the development process instead of being an afterthought.
+								</p>
+								<p><strong>Organizational Agreement</strong></p>
+								<p>It is important to point out that technical debt means different things to different
+									people. How much agreement you need to get across your organization depends on what
+									you plan to do with the inventory of technical debt once you go about compiling it.
+									Regardless if you are creating an inventory to manage it discretely within a small
+									development team or creating an enterprise wide governance initiative, it is
+									important that business stakeholders buy into the definition.</p>
+								<p>The ultimate goal of defining and identifying debt is to manage it. Including
+									business partners early in the process is key because once the technical debt is
+									identified and measured, remediation efforts will need to be prioritized along with
+									other enhancement requests. Business partners are much more likely to trade off
+									implementing new features for paying back the debt if they’re included early in the
+									process. Vetting out the definition with the business will help you stay on the
+									right path as you go about turning over rocks.</p>
+								<p><a href="http://www.gartner.com/it/page.jsp?id=1439513">Gartner defines IT
+										debt</a> as the cost of clearing the backlog of maintenance that would be
+									required to bring the corporate applications portfolio to a fully supported current
+									release state. While this definition is broad a lot is left to interpretation. A
+									critical question becomes what does “fully supported current release state” really
+									mean? If the application itself is free of technical debt but there are quality
+									issues in the underlying data does that qualify as technical debt using the Gartner
+									definition? What if those data quality issues are from upstream systems and you’re
+									paying interest on someone else’s debt?</p>
+								<p>Something else to be aware of is that most definitions of technical debt available
+									today focus on workarounds that were implemented during the development process.
+									Your business partners may want to cast the net wider than the traditional
+									definition and include technology risk related items such as control weaknesses.
+									Coming to a consensus on a definition with the folks who are writing the checks
+									(i.e. business partners) and prioritizing the backlog will pay dividends during the
+									remediation process.</p>
+								<p><strong>Implications</strong></p>
+								<p>The debt metaphor is an important tool in understanding and communicating the
+									implications of technical debt. Using this metaphor, <strong>free cash
+										flow</strong> can be thought of as the amount of resources available to maintain
+									and enhance systems. Cash flow is a finite resource that must be allocated
+									carefully. Failing to understand how much of that cash flow is being spent servicing
+									technical debt can lead to poor decisions on where to most effectively invest. This
+									could eventually lead to <strong>technical bankruptcy </strong>where all an
+									organization’s resources are spent dealing with the inefficiencies created by the
+									debt they have accumulated and they can no longer keep up.</p>
+								<p>While reaching the point of bankruptcy is an extreme case, I have seen very real
+									examples of this scenario first hand. Once an organization comes close to having
+									this level of debt there can be devastating consequences. Even if systems are
+									completely internal, impacts to customer service usually arise. Just like financial
+									bankruptcy, sometimes the magnitude of the underlying issues are so severe that it
+									becomes impossible to emerge. In the worst case scenarios, systems have to be
+									scrapped and rewritten, entire departments are outsourced, customers and market
+									share are lost and shareholders lose confidence. Therefore, it is critical that
+									organizations create a plan to proactively deal with this phenomena.</p>
+								<p><strong>In my next article I will discuss how to identify technical debt within an
+										organization. Subsequent articles will discuss the rest of activities in
+										managing the lifecycle including quantifying, resolving and governing technical
+										debt.</strong></p>
+							</div>
+							<div class="entry-utility">
+								This entry was posted in <a href="../../pages/blog.html"
+									rel="category tag">Blog</a> and tagged <a href="../../pages/tag/technical-debt.html"
+									rel="tag">Technical Debt</a>. Bookmark the <a href="index.html"
+									title="Permalink to Technical Debt &#8211; Part 1: Definition"
+									rel="bookmark">permalink</a>. </div>
+						</div>
+						<div id="nav-below" class="navigation">
+							<div class="nav-previous"><a href="../../pages/facebook-email-for-business.html"
+									rel="prev"><span class="meta-nav">&larr;</span> Facebook Email for Business?</a>
+							</div>
+							<div class="nav-next"><a href="../../pages/technical-debt-part-2-identification.html"
+									rel="next">Technical Debt &#8211; Part 2: Identification <span
+										class="meta-nav">&rarr;</span></a></div>
+						</div>
+					</div>
+					<div id="comments">
+						<h3 id="comments-title">3 Responses to <em>Technical Debt &#8211; Part 1: Definition</em></h3>
+						<ol class="commentlist">
+							<li class="post pingback">
+								<p>Pingback: <a href='../technical-debt-part-2-identification.html'
+										rel='external nofollow ugc' class='url'>Technical Debt &#8211; Part 2:
+										Identification | Acrowire</a></p>
+							</li>
+							<li class="post pingback">
+								<p>Pingback: <a href='../technical-debt-part-3-quantifying.html'
+										rel='external nofollow ugc' class='url'>Technical Debt &#8211; Part 3:
+										Quantifying | Acrowire</a></p>
+							</li>
+							<li class="post pingback">
+								<p>Pingback: <a href='../technical-debt-part-4-remediation.html'
+										rel='external nofollow ugc' class='url'>Technical Debt &#8211; Part 4:
+										Remediation | Acrowire</a></p>
+							</li>
+						</ol>
+						<div id="respond" class="comment-respond">
+							<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow"
+										id="cancel-comment-reply-link" href="#"
+										style="display:none;">Cancel reply</a></small></h3>
+							<p class="must-log-in">You must be <a
+									href="#4625#%2Ftechnical-debt-part-1-definition%2F">logged
+									in</a> to post a comment.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-300">
+					<div class="sideright">
+						<ul>
+							<li id="text-6" class="widget-container widget_text">
+								<div class="textwidget"><img
+										src="../../assets/images/img-question.jpg"><br />
+									<a href="../../pages/get-started.html">Get Started</a></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="content-inner-sidebar-bottom"></div>
+		</div>
+		<div id="container">
+			<div id="main-curve-bottom"></div>
+			<div id="footer">
+				<div id="footer-col">
+					<div class="col-920">
+						<div class="col-196 equal"><img
+								src="../../assets/images/logo-footer.png"
+								alt="" width="129" height="38" /></div>
+						<div class="vertical-separator equal"></div>
+						<div class="col-160 equal">
+							<ul>
+								<li><a href="../../pages/about-us.html">About Us</a></li>
+								<li><a href="../../pages/get-started.html">Contact Us</a></li>
+								<li><a href="../../pages/news.html">Featured Articles</a></li>
+							</ul>
+						</div>
+						<div class="col-284 equal">
+							<ul class="socialicon">
+								<li></li>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div id="footer-text">
+					Copyright © Acrowire, LLC. All rights reserved.
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../../assets/js/jquery-1.4.2.js"></script> 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> 	<script src="../../assets/js/jquery.cycle.all.js" type="text/javascript"></script> 	<script type="text/javascript" src="../../assets/js/jquery.colorbox.js"></script> 	<script type="text/javascript" src="../../assets/js/dropdown.js"></script> 	<script type="text/javascript" src="../../assets/js/jquery.equalheights.js"></script> 	<script type="text/javascript" src="../../assets/js/jquery.corner.js"></script>
+	
+</body>
+
+</html>
+<!--  21:06:45 -->
